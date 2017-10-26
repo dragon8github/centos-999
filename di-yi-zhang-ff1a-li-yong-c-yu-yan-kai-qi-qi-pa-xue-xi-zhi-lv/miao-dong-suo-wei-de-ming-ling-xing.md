@@ -8,7 +8,7 @@ yum install gcc
 yum install gcc-c++
 ```
 
-进入/root，新建一个.c文件夹： `vim lee.c`
+进入/root，新建一个.c文件夹： `vim fuck.c`
 
 ```c
 #include <stdio.h>
