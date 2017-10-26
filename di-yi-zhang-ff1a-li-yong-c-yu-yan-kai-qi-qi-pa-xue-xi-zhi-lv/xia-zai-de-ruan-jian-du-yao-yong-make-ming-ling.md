@@ -1,4 +1,6 @@
-上节课我们用最简单的方法写了个C程序，那么如果把一些方法放到外部调用呢？譬如我有个外部函数库，有个显示我年龄的方法 规范的做法是:
+上节课我们用最简单的方法写了个C程序，那么如果把一些方法放到外部调用呢？  
+譬如我有个外部函数库，有个显示我年龄的方法  
+ 规范的做法是:
 
 1、定义一个 me.h 头文件
 
@@ -48,6 +50,30 @@ $ gcc fuck.c me.c -o fuck
 ```
  $ yum install make
 ```
+
+Makefile最简单写法
+
+```
+目标文件(target):依赖文件
+    <tab> gcc <...>
+```
+
+创建makefile
+
+```
+fuck:fuck.c me.c
+        gcc fuck.c me.c -o fuck
+```
+
+使用make命令调用makefile
+
+```
+$ make
+```
+
+我们发现，fuck又文件出来了。
+
+![](/assets/123133546和规范房GV成本vcnccbnc.png)
 
 
 
