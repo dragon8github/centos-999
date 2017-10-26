@@ -5,6 +5,7 @@
 * [简介](README.md)
 * 虚拟机安装 Centos
 * [网络配置 与 桥接模式](chapter1.md)
+* [命令行扫盲](ming-ling-xing-sao-mang.md)
 
 ## 第一章：利用C语言开启奇葩学习之旅
 
