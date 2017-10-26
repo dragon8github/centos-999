@@ -36,3 +36,17 @@ gcc fuck.c -o fuck
 
 执行该文件，输出hello
 
+---
+
+将fuck文件移动到/bin命令文件夹中去。这样我们在任意地方都可以访问到它了。再也不需要加入相对或绝对路径
+
+```
+mv /home/lee/fuck /bin/
+```
+
+这时候再从任意地方运行 fuck 命令，都可以打印出hello
+
+![](/assets/ads864ijnxvccfuck.png)
+
+![](/assets/adsszzczxcwqeqweqweq.png)
+
