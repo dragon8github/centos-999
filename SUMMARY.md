@@ -9,7 +9,7 @@
 
 ## 第一章：利用C语言开启奇葩学习之旅
 
-* 秒懂所谓的命令行
+* [秒懂所谓的命令行](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/miao-dong-suo-wei-de-ming-ling-xing.md)
 
 ## 第二章:逼自己学shell脚本
 
