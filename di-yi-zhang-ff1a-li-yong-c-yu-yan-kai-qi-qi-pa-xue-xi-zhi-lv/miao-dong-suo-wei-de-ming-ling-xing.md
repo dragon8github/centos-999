@@ -21,7 +21,7 @@ int main () {
 
 编译并输出一个可执行文件
 
-```
+```js
 gcc fuck.c -o fuck
 ```
 
@@ -29,7 +29,7 @@ gcc fuck.c -o fuck
 
 ![](/assets/1235467687654465567.png)
 
-```
+```py
 # 运行该文件，也可以使用绝对路径 /home/lee/fuck 来运行，这里使用相对路径 ./ 来运行
 ./fuck
 ```
