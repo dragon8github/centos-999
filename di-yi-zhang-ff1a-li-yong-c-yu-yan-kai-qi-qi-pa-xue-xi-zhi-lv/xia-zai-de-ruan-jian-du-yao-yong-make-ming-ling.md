@@ -50,28 +50,28 @@ $ gcc fuck.c me.c -o fuck
  $ yum install make
 ```
 
-Makefile最简单写法
+使用`make`命令时，会自动根据目录下的`Makefile`文件进行相关操作，`Makefile`最简单写法如下：
 
 ```
 目标文件名:依赖文件
 
-<tab> 你的命令
+<tab键> 你的命令
 ```
 
-创建makefile
+创建`makefile`
 
 ```
 fuck:fuck.c me.c
         gcc fuck.c me.c -o fuck
 ```
 
-使用make命令调用makefile
+使用`make`命令调用`makefile`
 
 ```
 $ make
 ```
 
-我们发现自动执行了 `gcc fuck.c me.c -o fuck`，fuck又文件出来啦~。
+我们发现自动执行了 `gcc fuck.c me.c -o fuck`，fuck文件又出来啦~。
 
 ![](/assets/123133546和规范房GV成本vcnccbnc.png)
 
