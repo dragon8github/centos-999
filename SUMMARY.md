@@ -11,6 +11,8 @@
 
 * [秒懂所谓的命令行，创造属于自己的命令行](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/miao-dong-suo-wei-de-ming-ling-xing.md)
 * [make命令 与 makefile文件](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/xia-zai-de-ruan-jian-du-yao-yong-make-ming-ling.md)
+* [vim的极简用法](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/vimde-ji-jian-yong-fa.md)
+* [老师逼你学过指针没？](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/lao-shi-bi-ni-xue-guo-zhi-zhen-mei-ff1f.md)
 
 ## 第二章:逼自己学shell脚本
 
