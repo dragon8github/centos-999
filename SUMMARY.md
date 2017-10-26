@@ -3,9 +3,9 @@
 ## 第零章：环境搭建
 
 * [简介](README.md)
-* 虚拟机安装 Centos
+* [虚拟机安装 Centos](xu-ni-ji-an-zhuang-centos.md)
 * [网络配置 与 桥接模式](chapter1.md)
-* [命令行扫盲](ming-ling-xing-sao-mang.md)
+* [共享文件夹 和 共享粘贴板](gong-xiang-wen-jian-jia-he-gong-xiang-nian-tie-ban.md)
 
 ## 第一章：利用C语言开启奇葩学习之旅
 
