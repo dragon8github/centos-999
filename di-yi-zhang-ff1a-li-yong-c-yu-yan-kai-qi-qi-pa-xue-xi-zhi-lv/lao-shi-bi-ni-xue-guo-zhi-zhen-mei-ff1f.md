@@ -4,8 +4,6 @@ C 木有string 。不像java 直接定义一个String完事
 
 ![](/assets/C啊实打实大大212334435678hkhjkhjkhjkhjkhjkhjkhjkh.png)
 
-
-
 譬如我们要输出一个字符\(单字符\)
 
 ```c
@@ -16,8 +14,6 @@ char a = 'a';
 printf("is %c", a);
 ```
 
-
-
 # 那我就是要用字符串呢？
 
 c 提供了字符数组
@@ -26,7 +22,7 @@ c 提供了字符数组
 #include <stdio.h>
 
 int main () {
-    char *ch = “shenyi”;
+    char *ch = "fuck";
     for(i=0; i < 6; i++)
     {
         printf("is %c \n", *ch);
@@ -35,8 +31,6 @@ int main () {
     return 0;
 }
 ```
-
-
 
 
 
