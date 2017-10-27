@@ -1,3 +1,46 @@
+# 上帝降临
+
+> $ mkdir /home/lee/god && vim /home/lee/god/god.c
+
+```js
+#include <stdio.h>
+
+int main (int argc, char* argv[]) {
+    int i;
+    if (argc == 2) {
+      if (strcmp(argv[1], "-version") == 0) {
+        printf("god version is 1.0\n");
+      } else {
+        printf("%s\n", argv[1]);
+      }
+    }
+    return 0;
+}
+```
+
+创建make && makefile
+
+> $ vim /home/lee/god/makefile
+
+```c
+god: god.c
+        gcc god.c -o god
+```
+
+测试一下是否一切正常
+
+> **$ make **
+>
+> gcc god.c -o god
+>
+> **$ ./god -version**
+>
+> god version is 1.0
+>
+> **$ ./god fuck**
+>
+> fuck
+
 # C 语言里面的字符比较函数：strcmp
 
 ```c
@@ -30,7 +73,7 @@ which 命令可以根据字符串查找软件存储的环境变量位置。
 
 每个人配置不一样，输出的结果也不一样。总之我们得到了一个环境变量位置的列表。
 
-我们可以把god放置在任意一个位置。就可以在全局访问了。
+我们可以把god放置在任意一个位置\(如/usr/bin\)。就可以在全局访问了。
 
 ---
 
