@@ -59,6 +59,7 @@ int main (int argc, char *argv[]) {
 void makelogfile () {
     // 获取 GO_PATH 全局变量
     char *god_path = getenv("GOD_PATH");
+    // 注意，C 语言的 NULL 必须是大写的
     if (god_path == NULL){
         printf("can not find GOD_PATH");
         return;
