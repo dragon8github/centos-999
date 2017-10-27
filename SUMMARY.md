@@ -13,6 +13,7 @@
 * [make命令 与 makefile文件](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/xia-zai-de-ruan-jian-du-yao-yong-make-ming-ling.md)
 * [vim的极简用法](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/vimde-ji-jian-yong-fa.md)
 * [老师逼你学过指针没？](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/lao-shi-bi-ni-xue-guo-zhi-zhen-mei-ff1f.md)
+* [不要让你的程序孤独存在:理解什么是依赖](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/bu-yao-rang-ni-de-cheng-xu-gu-du-cun-57283a-li-jie-shi-yao-shi-yi-lai.md)
 
 ## 第二章：逼自己学 shell 脚本
 
