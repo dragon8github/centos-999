@@ -12,7 +12,7 @@
 
 2、我们在最后面加上一句话 ：
 
-> GOD\_PATH=/god 
+> GOD\_PATH=/god
 >
 > export GOD\_PATH
 
@@ -27,4 +27,53 @@ source 命令是内建命令。用于在bash环境下读取和立即执行某文
 ---
 
 大功告成，这样一来所有的用户都可以读取到 $GOD\_PATH 这个变量了。
+
+接下来回到 C 语言，利用 GOD\_PATH 输出日志。
+
+本demo中用到了新的库 &lt;string.h&gt; 。显然是操作字符串的库。如何把字符串相加，用到3个函数：
+
+* strcpy ：复制字符串 
+* strcat ：连接字符串 
+* strlen ：获取串长度
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void makelogfile();
+
+int main (int argc, char *argv[]) {
+    makelogfile();
+    int i;
+    if (argc == 2) {
+        if (strcmp(argv[1], "-version") == 0) {
+            printf("god version is 1.0\n"); 
+        } else {
+            printf("%s\n",argv[1]);
+        }
+    }
+	return 0;
+}
+
+void makelogfile () {
+    char *god_path = getenv("GOD_PATH");
+    if (god_path == NULL){
+	    printf("can not find GOD_PATH");
+	    return;
+	} else {
+        mkdir(god_path);
+        char *god_file_name = "/godlog.log";
+        char god_file_path[strlen(god_path) + strlen(god_file_name)];
+        strcpy(god_file_path, god_path);
+        strcat(god_file_path, god_file_name);
+        FILE *fp = fopen(god_file_path,"w");
+        fclose(fp);
+        printf("god log file make");
+    }
+}
+
+```
+
+
 
