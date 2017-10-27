@@ -41,6 +41,7 @@ source 命令是内建命令。用于在bash环境下读取和立即执行某文
 #include <stdlib.h>
 #include <string.h>
 
+// 由于函数写在main的下方，所以需要先声明
 void makelogfile();
 
 int main (int argc, char *argv[]) {
