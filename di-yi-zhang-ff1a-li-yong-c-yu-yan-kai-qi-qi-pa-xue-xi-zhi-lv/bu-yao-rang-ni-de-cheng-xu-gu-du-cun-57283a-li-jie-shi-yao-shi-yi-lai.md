@@ -76,5 +76,5 @@ install:
         ldconfig
 ```
 
-
+![](/assets/iukyu9ky9uk9yk9yik9yiuk9yiu9kiyu9ki.png)
 
