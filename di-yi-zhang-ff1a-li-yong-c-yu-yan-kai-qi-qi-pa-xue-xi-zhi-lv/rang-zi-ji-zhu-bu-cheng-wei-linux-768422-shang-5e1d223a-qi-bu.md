@@ -18,7 +18,7 @@ int main (int argc, char* argv[]) {
 }
 ```
 
-创建make && makefile
+创建make && makefile：
 
 > $ vim /home/lee/god/makefile
 
@@ -27,7 +27,7 @@ god: god.c
         gcc god.c -o god
 ```
 
-测试一下是否一切正常
+测试一下是否一切正常：
 
 > **$ make **
 >
@@ -59,13 +59,13 @@ int strcmp(const char *s1, const char *s2)
 
 which 命令可以根据字符串查找软件存储的环境变量位置。
 
-> $ which echo
+> **$ which echo**
 >
 > /usr/bin/echo
 
-如上，我们得知echo命令（程序）存放位置在 /usr/bin/echo 中
+如上，我们得知echo命令（程序）存放位置在 /usr/bin/echo 中。
 
-那这时候我们输入一个不存在环境变量的命令会如何呢？譬如god
+那这时候我们输入一个不存在环境变量的命令会如何呢？譬如 god：
 
 > $ which god
 >
