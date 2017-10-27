@@ -71,7 +71,7 @@ which 命令可以根据字符串查找软件存储的环境变量位置。
 >
 > /usr/bin/which: no god in \(/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/lee/.local/bin:/home/lee/bin\)
 
-每个人配置不一样，输出的结果也不一样。总之我们得到了一个环境变量位置的列表。
+每个人配置不一样，输出的结果也不一样。总之我们得到了一个环境变量位置的列表。说明UNIX会从这些位置上查找命令。
 
 事实上，直接输出$PATH全局变量也可以得到环境变量列表。
 
