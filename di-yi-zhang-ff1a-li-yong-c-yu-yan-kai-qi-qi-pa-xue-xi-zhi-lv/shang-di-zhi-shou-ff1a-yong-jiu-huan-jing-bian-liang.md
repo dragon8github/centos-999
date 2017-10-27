@@ -43,10 +43,12 @@ source 命令是内建命令。用于在bash环境下读取和立即执行某文
 
 // 由于函数写在main的下方，所以需要先声明
 void makelogfile();
+void loadfile(char *filename);
 
 int main (int argc, char *argv[]) {
     makelogfile();
     int i;
+
     if (argc == 2) {
         if (strcmp(argv[1], "-version") == 0) {
             printf("god version is 1.0\n"); 
@@ -54,7 +56,33 @@ int main (int argc, char *argv[]) {
             printf("%s\n",argv[1]);
         }
     }
+
+    if (argc == 3) {
+        if (strcmp(argv[1], "-fw") == 0) {
+            FILE *fp = fopen(argv[2], "w");
+            fclose(fp);
+        } else if (strcmp(argv[1], "-fr") == 0) {
+            loadfile(argv[2]);
+        }
+    }
+    
     return 0;
+}
+
+void loadfile (char *filename) {
+    FILE *fp = fopen(filename, "r");
+    if (fp == NULL) {
+        printf("cant not find file \n");
+        return;
+    } else {
+        char ch;
+        ch = fgetc(fp);
+        while (ch != EOF) {
+            printf("%c", ch);
+            ch = fgetc(fp);
+        }
+        fclose(fp);
+    }
 }
 
 void makelogfile () {
@@ -62,9 +90,9 @@ void makelogfile () {
     char *god_path = getenv("GOD_PATH");
     // 注意，C 语言的 NULL 必须是大写的
     if (god_path == NULL){
-        printf("can not find GOD_PATH");
-        return;
-    } else {
+	    printf("can not find GOD_PATH");
+	    return;
+	} else {
         // 创建文件夹
         mkdir(god_path);
         // 定义日志文件名
@@ -83,6 +111,10 @@ void makelogfile () {
     }
 }
 ```
+
+使用god命令读取文件
+
+> $ ./god -fr index.html
 
 
 
