@@ -16,14 +16,13 @@ printf("is %c", a);
 
 # 那我就是要用字符串呢？
 
-c 提供了字符数组
-
 ```c
 #include <stdio.h>
 
 int main () {
     char *ch = "fuck";
-    for(i=0; i < 6; i++)
+    int i;
+    for(i = 0; i < 4; i++)
     {
         printf("is %c \n", *ch);
         ch++;
