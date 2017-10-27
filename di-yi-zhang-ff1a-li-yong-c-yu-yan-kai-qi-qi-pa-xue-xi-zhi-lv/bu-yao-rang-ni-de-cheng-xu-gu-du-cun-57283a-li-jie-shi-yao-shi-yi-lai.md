@@ -76,11 +76,11 @@ install:
         ldconfig
 ```
 
-先使用 `make` 命令编译我们的软件
+先使用 `make` 命令编译我们的软件，再使用 `make install` 命令将 .so 文件移动到 /lib 中去
 
-> $ make
+> $ make && make install
 
-再使用 `make install` 命令将 .so 文件移动到 /lib 中去
+
 
 ![](/assets/asdasdasd45456456525234234234234234234234.png)
 
