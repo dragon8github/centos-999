@@ -30,7 +30,7 @@ source 命令是内建命令。用于在bash环境下读取和立即执行某文
 
 接下来回到 C 语言，利用 GOD\_PATH 输出日志。
 
-本demo中用到了新的库 &lt;string.h&gt; 。显然是操作字符串的库。如何把字符串相加，用到3个函数：
+本demo中用到了新的库 &lt;string.h&gt; 。显然是操作字符串的库。如何把字符串相加，用到了以下3个函数：
 
 * strcpy ：复制字符串；
 * strcat ：连接字符串；
@@ -53,16 +53,16 @@ int main (int argc, char *argv[]) {
             printf("%s\n",argv[1]);
         }
     }
-	return 0;
+    return 0;
 }
 
 void makelogfile () {
     // 获取 GO_PATH 全局变量
     char *god_path = getenv("GOD_PATH");
     if (god_path == NULL){
-	    printf("can not find GOD_PATH");
-	    return;
-	} else {
+        printf("can not find GOD_PATH");
+        return;
+    } else {
         // 创建文件夹
         mkdir(god_path);
         // 定义日志文件名
@@ -80,7 +80,6 @@ void makelogfile () {
         printf("god log file make");
     }
 }
-
 ```
 
 
