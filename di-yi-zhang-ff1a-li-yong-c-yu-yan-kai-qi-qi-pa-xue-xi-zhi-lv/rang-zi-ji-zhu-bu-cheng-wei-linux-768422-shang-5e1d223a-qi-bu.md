@@ -55,7 +55,7 @@ int strcmp(const char *s1, const char *s2)
 
 ---
 
-# 抛砖引玉的使用which
+# 抛砖引玉的使用which、$PATH
 
 which 命令可以根据字符串查找软件存储的环境变量位置。
 
@@ -67,11 +67,17 @@ which 命令可以根据字符串查找软件存储的环境变量位置。
 
 那这时候我们输入一个不存在环境变量的命令会如何呢？譬如 god：
 
-> $ which god
+> **$ which god**
 >
 > /usr/bin/which: no god in \(/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/lee/.local/bin:/home/lee/bin\)
 
 每个人配置不一样，输出的结果也不一样。总之我们得到了一个环境变量位置的列表。
+
+事实上，直接输出$PATH全局变量也可以得到环境变量列表。
+
+> **$ echo $PATH**
+>
+> /usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/lee/.local/bin:/home/lee/bin
 
 我们可以把god放置在任意一个位置\(如/bin\)。就可以在全局访问了。
 
