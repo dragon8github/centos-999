@@ -56,7 +56,25 @@ CentOS中有和windows很类似的两个存放公共库的文件夹
 
 ---
 
-大功告成，这时候我们的 ./fuck 就又能正常运行了。哪怕当前目录中没有 me.c 和 me.h
+# 大功告成
+
+这时候我们的 ./fuck 就又能正常运行了。哪怕当前目录中没有 me.c 和 me.h
 
 ![](/assets/1231253412834812544124381243.png)
+
+---
+
+修改我们的makefile
+
+```
+fuck:fuck.c libme.so
+        gcc -L ./ -l me fuck.c -o fuck
+libme.so:me.c
+        gcc -shared me.c -o libme.so
+install:
+        cp ./libme.so /usr/lib
+        ldconfig
+```
+
+
 
