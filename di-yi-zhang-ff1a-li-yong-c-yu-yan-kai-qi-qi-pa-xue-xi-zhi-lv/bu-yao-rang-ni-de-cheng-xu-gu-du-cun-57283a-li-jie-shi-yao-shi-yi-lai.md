@@ -16,7 +16,7 @@
 
 > $ gcc -shared me.c -o libme.so
 
-手动指定我的动态链接库在哪
+编译 fuck 程序并且手动指定我的动态链接库在哪
 
 > $ gcc -L /home/lee/ -l me fuck.c -o fuck
 
@@ -79,8 +79,6 @@ install:
 先使用 `make` 命令编译我们的软件，再使用 `make install` 命令将 .so 文件移动到 /lib 中去
 
 > $ make && make install
-
-
 
 ![](/assets/asdasdasd45456456525234234234234234234234.png)
 
