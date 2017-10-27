@@ -5,7 +5,6 @@
 int strcmp(const char *s1, const char *s2)
 ```
 
-  
 若s1==s2，则返回零；
 
 若s1&gt;s2，则返回正数；
@@ -15,6 +14,30 @@ int strcmp(const char *s1, const char *s2)
 字符串大小的比较是以ASCII 码表上的顺序来决定
 
 ---
+
+# 抛砖引玉的使用which
+
+which 命令可以根据字符串在环境变量里，查找软件存储的位置。
+
+> $ which echo
+>
+> /usr/bin/echo
+
+如上，我们得知echo命令（程序）存放位置在 /usr/bin/echo 中
+
+那这时候我们输入一个不存在环境变量的命令会如何呢？譬如god
+
+> $ which god
+>
+> /usr/bin/which: no god in \(/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/lee/.local/bin:/home/lee/bin\)
+
+每个人配置不一样，输出的结果也不一样。总之我们得到了一个环境变量位置的列表。
+
+我们可以把god放置在任意一个位置。就可以在全局访问了。
+
+---
+
+
 
 
 
