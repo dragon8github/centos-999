@@ -2,13 +2,12 @@
 
 其实我们早就接触过动态链接库
 
-1、Windows上是dynamic   link   library \(DLL\),后缀？xxx.dll嘛！
+1、Windows上是dynamic   link   library \(DLL\),后缀？xxx.dll嘛！
 
-2、UNIX或Linux上是Shared   Library .后缀是啥? xxx.so嘛！
+2、UNIX或Linux上是Shared   Library .后缀是啥? xxx.so嘛！
 
-为了好理解我们暂时不要拘泥于动态库的形式 ，我们就理解为**把其封装为类库，其他程序都可以动态调用就完事了。**
-
-
+为了好理解我们暂时不要拘泥于动态库的形式 ，我们就理解为**把其封装为类库，其他程序都可以动态调用就完事了。  
+**
 
 # 把me.c编译成”dll”
 
@@ -18,9 +17,9 @@
 
 手动指定我的动态链接库在哪
 
-> $ gcc –L /home/lee/ -l me fuck.c -o fuck
+> $ gcc -L /home/lee/ -l me fuck.c -o fuck
 
--L 动态链接库的文件夹位置   
+-L 动态链接库的文件夹位置
 
 -l 动态链接库的库名 \(去除最前面的 lib 和 .so 就是库名\)
 
@@ -31,6 +30,20 @@
 > $ ldd fuck
 
 ![](/assets/asda566745yjb.png)
+
+我们发现我们的 fuck 程序依赖四个文件，但 libme.so 文件无法找到。
+
+其实Linux和windows一样，有个类似system32的系统库文件夹。各种公共类库都放于此
+
+CentOS中有和windows很类似的两个存放公共库的文件夹
+
+/lib：内核级
+
+/usr/lib：用户系统级
+
+/usr/lib64/：64位系统才有
+
+---
 
 
 
