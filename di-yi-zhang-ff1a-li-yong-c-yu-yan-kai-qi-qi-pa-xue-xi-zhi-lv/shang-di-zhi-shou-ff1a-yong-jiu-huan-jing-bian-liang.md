@@ -32,9 +32,9 @@ source 命令是内建命令。用于在bash环境下读取和立即执行某文
 
 本demo中用到了新的库 &lt;string.h&gt; 。显然是操作字符串的库。如何把字符串相加，用到3个函数：
 
-* strcpy ：复制字符串 
-* strcat ：连接字符串 
-* strlen ：获取串长度
+* strcpy ：复制字符串；
+* strcat ：连接字符串；
+* strlen ：获取串长度。
 
 ```c
 #include <stdio.h>
@@ -57,17 +57,25 @@ int main (int argc, char *argv[]) {
 }
 
 void makelogfile () {
+    // 获取 GO_PATH 全局变量
     char *god_path = getenv("GOD_PATH");
     if (god_path == NULL){
 	    printf("can not find GOD_PATH");
 	    return;
 	} else {
+        // 创建文件夹
         mkdir(god_path);
+        // 定义日志文件名
         char *god_file_name = "/godlog.log";
+        // 定义一个字符数组
         char god_file_path[strlen(god_path) + strlen(god_file_name)];
+        // 复制（/god）
         strcpy(god_file_path, god_path);
+        // 拼接 (/god/godlog.log)
         strcat(god_file_path, god_file_name);
+        // 读取文件（暂不写入）
         FILE *fp = fopen(god_file_path,"w");
+        // 关闭文件
         fclose(fp);
         printf("god log file make");
     }
