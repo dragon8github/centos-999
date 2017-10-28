@@ -115,13 +115,13 @@ void makelogfile () {
 }
 ```
 
-使用god命令读取文件
+使用god命令读取文件。
 
-god -fw 文件名代表创建一个空文件
+god -fw 文件名代表创建一个空文件。
 
 > $ ./god -fw index.html
 
-god -fr 文件名 代表读取整个文件就代表读取文件，并打印在屏幕中
+god -fr 文件名 代表读取整个文件就代表读取文件，并打印在屏幕中。这是模拟cat命令。
 
 > $ ./god -fr index.html
 
