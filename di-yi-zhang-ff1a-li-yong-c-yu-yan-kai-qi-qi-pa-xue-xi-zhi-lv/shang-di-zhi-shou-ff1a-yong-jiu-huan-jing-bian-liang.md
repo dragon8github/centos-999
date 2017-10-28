@@ -65,18 +65,21 @@ int main (int argc, char *argv[]) {
             loadfile(argv[2]);
         }
     }
-    
+
     return 0;
 }
 
 void loadfile (char *filename) {
+    // 打开文件fopen，位置指针默认指向第一个字节
     FILE *fp = fopen(filename, "r");
     if (fp == NULL) {
         printf("cant not find file \n");
         return;
     } else {
         char ch;
+        // 读取一个字符，指针自动往后移动（fgetc函数)
         ch = fgetc(fp);
+        // 每个文件都有一个 EOF 常量标识，代表读取结束啦
         while (ch != EOF) {
             printf("%c", ch);
             ch = fgetc(fp);
@@ -90,9 +93,9 @@ void makelogfile () {
     char *god_path = getenv("GOD_PATH");
     // 注意，C 语言的 NULL 必须是大写的
     if (god_path == NULL){
-	    printf("can not find GOD_PATH");
-	    return;
-	} else {
+        printf("can not find GOD_PATH");
+        return;
+    } else {
         // 创建文件夹
         mkdir(god_path);
         // 定义日志文件名
@@ -113,6 +116,12 @@ void makelogfile () {
 ```
 
 使用god命令读取文件
+
+god -fw 文件名代表创建一个空文件
+
+> $ ./god -fw index.html
+
+god -fr 文件名 代表读取整个文件就代表读取文件，并打印在屏幕中
 
 > $ ./god -fr index.html
 
