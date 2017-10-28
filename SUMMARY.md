@@ -17,6 +17,7 @@
 * [让自己逐步成为Linux的"上帝"： 诞生](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/rang-zi-ji-zhu-bu-cheng-wei-linux-768422-shang-5e1d223a-qi-bu.md)
 * [上帝之手：C 语言获取和设置UNIX的变量](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/c-yu-yan-huo-qu-bian-liang.md)
 * [上帝之手：永久环境变量](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/shang-di-zhi-shou-ff1a-yong-jiu-huan-jing-bian-liang.md)
+* [上帝之手：读取文件](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/shang-di-zhi-shou-ff1a-wu-suo-bu-ji.md)
 
 ## 第二章：逼自己学 shell 脚本
 
