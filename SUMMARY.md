@@ -21,6 +21,8 @@
 
 ## 第二章：逼自己学 shell 脚本
 
+* [权限解读与shell入门](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/quan-xian-jie-du-yu-shell-ru-men.md)
+
 ## 第三章：iptables + Apache + Python 红蓝军大战篇
 
 ## 第四章：Apache 应用和优化篇
