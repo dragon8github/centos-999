@@ -35,3 +35,8 @@
 
 ## 第七章：Nginx 学习篇
 
+## 扩张阅读
+
+* [wget参数](kuo-zhang-yue-du/wgetcan-shu.md)
+* [curl参数](kuo-zhang-yue-du/curlcan-shu.md)
+

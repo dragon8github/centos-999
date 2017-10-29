@@ -10,11 +10,11 @@
 
 用GET的方式直接访问网页：
 
-> $ curl http://www.baidu.com
+> $ curl [http://www.baidu.com](http://www.baidu.com)
 
 curl很牛逼的地方是还能模拟POST提交：
 
-> $ curl -d “password=123” [http://www.jtthink.com/test/update.php](http://www.jtthink.com/test/update.php)
+> $  curl -d "password=123" http://www.jtthink.com/test/update.php -s
 
 ---
 
