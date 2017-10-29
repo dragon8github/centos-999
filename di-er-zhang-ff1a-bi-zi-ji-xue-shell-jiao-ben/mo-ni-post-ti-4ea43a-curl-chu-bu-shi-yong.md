@@ -26,8 +26,7 @@ curl很牛逼的地方是还能模拟POST提交：
 * lt是小于（less than）;
 * eq是等于（equal）;        
 * ne是不等于（not equal）;
-* ge是大于等于（large equal
-  ）;
+* ge是大于等于（large equal）;
 * le是小于等于（less equal）。
 
 ---
@@ -42,7 +41,7 @@ curl很牛逼的地方是还能模拟POST提交：
 
 4、使用wget下载下来。
 
-test.sh
+新建脚本文件 test.sh：
 
 ```php
 LOCAL_VER=`cat version`
