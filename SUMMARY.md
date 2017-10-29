@@ -11,7 +11,7 @@
 
 * [秒懂所谓的命令行，创造属于自己的命令行](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/miao-dong-suo-wei-de-ming-ling-xing.md)
 * [make命令与makefile文件](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/xia-zai-de-ruan-jian-du-yao-yong-make-ming-ling.md)
-* [vim的极简用法](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/vimde-ji-jian-yong-fa.md)
+* [vim的极简用法，学会这些就够了！](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/vimde-ji-jian-yong-fa.md)
 * [指针很难？不存在的！](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/lao-shi-bi-ni-xue-guo-zhi-zhen-mei-ff1f.md)
 * [不要让你的程序孤独存在：理解什么是依赖](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/bu-yao-rang-ni-de-cheng-xu-gu-du-cun-57283a-li-jie-shi-yao-shi-yi-lai.md)
 * [让自己逐步成为Linux的"上帝"： 诞生](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/rang-zi-ji-zhu-bu-cheng-wei-linux-768422-shang-5e1d223a-qi-bu.md)
