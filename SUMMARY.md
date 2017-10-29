@@ -22,7 +22,7 @@
 ## 第二章：逼自己学 shell 脚本
 
 * [权限解读 与 Shell入门](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/quan-xian-jie-du-yu-shell-ru-men.md)
-* [Shell：下载](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/shellff1a-xia-zai.md)
+* [模拟软件升级：wget下载命令](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/shellff1a-xia-zai.md)
 
 ## 第三章：iptables + Apache + Python 红蓝军大战篇
 
