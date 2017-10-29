@@ -36,5 +36,34 @@
 
 ---
 
+shell入门脚本：
+
+```php
+# 定义变量（大写是为了规范，等号两边不可以有空格！）
+ERROR_LOG_FILE='error.log'
+# `符号可以让执行命令或程序的结果赋值到某个变量中
+CUR_TIME=`date +'%Y-%m-%d %H:%M-%S'`
+
+# 判断是否存在error.log文件（使用变量的方式是加入$）
+# - f 正规文件
+# - d 目录
+# - s 文件长度大于0、非空
+# - w 可写
+# - L 符号连接
+# - u 文件有s u i d位设置
+# - r 可读
+# - x 可执行
+if [ -f $ERROR_LOG_FILE ]
+    then
+        # >>是插入新的一行
+        # 字符串中嵌套变量必须是双引号
+        echo "add log at $CUR_TIME" >> error.log
+    else
+        # >是将输出的内容插入error.log文件中，如果文件不存在则先创建再插入。
+        # 如果要使\n生效。那么就需要加入-e参数
+        echo -e 'log init \r\n' > error.log
+fi
+```
+
 
 
