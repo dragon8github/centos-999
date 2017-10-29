@@ -49,9 +49,9 @@ REMOTE_VER=`curl http://www.jtthink.com/test/conf.txt -s | sed -n '2p'`
 
 if [ $LOCAL_VER -lt $REMOTE_VER ]
    then
-   GET_UPDATE = `curl -d "password=123" http://www.jtthink.com/test/update.php -s`
-   wget $GET_UPDATE
-   echo "2" > version
+      GET_UPDATE = `curl -d "password=123" http://www.jtthink.com/test/update.php -s`
+      wget $GET_UPDATE
+      echo "2" > version
 fi
 ```
 
