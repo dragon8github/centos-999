@@ -10,7 +10,7 @@
 
 # useradd：创建用户
 
-首先我们执行which useradd 发现这是/usr/sbin 下面的工具。 那么/bin和/usr/sbin的区别在于：
+首先我们执行which useradd 发现这是/usr/sbin 下面的工具。 那么 /bin 和 /usr/sbin 的区别在哪呢？
 
 * /bin 包含了老大和小弟均可使用的工具 ；
 * /usr \(unix software source\)代表安装的应用软件目录；
@@ -19,11 +19,11 @@
 
 > $ useradd jtthink
 
-就会创建一个用户，并且会在Home目录下创建一个文件夹叫jtthink
+就会创建一个用户，并且会在Home目录下创建一个文件夹叫jtthink。
 
 > $ userdel -r jtthink
 
-删除用户，如果不加-r仅仅会删除用户，不会删除相关的文件，譬如/Home/jtthink
+删除用户，如果不加-r仅仅会删除用户，不会删除相关的文件，譬如/Home/jtthink。
 
 ---
 
