@@ -47,6 +47,8 @@ wget -O 你喜欢的文件名、指定目录
 
 ---
 
+# 写一个shell脚本
+
 test.sh：
 
 ```php
