@@ -22,12 +22,12 @@ curl很牛逼的地方是还能模拟POST提交：
 
 # 数字比对大小
 
-* gt是大于的意思（large than）;  
-* lt是小于（less than）;
-* eq是等于（equal）;        
-* ne是不等于（not equal）;
-* ge是大于等于（large equal）;
-* le是小于等于（less equal）。
+* gt  是大于的意思（large than）;  
+* lt   是小于（less than）;
+* eq 是等于（equal）;        
+* ne 是不等于（not equal）;
+* ge 是大于等于（large equal）;
+* le  是小于等于（less equal）。
 
 ---
 
