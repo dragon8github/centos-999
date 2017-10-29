@@ -4,7 +4,7 @@
 
 1. 判断用户是否存在\(譬如叫god\),没有则创建；
 2. 创建后设置密码为123；
-3. 把一些程序文件拷贝过去，并且除了root外，只能god用户运行\(最好是root也不能方便的运行\)。
+3. 把一些程序文件拷贝过去，并且除了ROOT外，只能god用户运行\(最好是ROOT也不能方便的运行\)。
 
 ---
 
@@ -35,7 +35,7 @@
 
 ---
 
-> cat /etc/shadow
+> **$ cat /etc/shadow**
 >
 > jtthink:x:501:501::/home/jtthink:/bin/bash
 
@@ -63,7 +63,7 @@
 
 # 禁止用户shell登录
 
-基本使用： 
+基本使用：
 
 > usermod -s /sbin/nologin &lt;用户名&gt;
 
@@ -72,4 +72,6 @@
 > useradd -s /sbin/nologin &lt;用户名&gt;
 
 ---
+
+
 
