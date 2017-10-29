@@ -14,9 +14,46 @@
 
 curl很牛逼的地方是还能模拟POST提交：
 
-> $  curl -d "password=123" http://www.jtthink.com/test/update.php -s
+> \# 注意，由于某些场景 curl 会出现统计信息。于是我们需要加入一个参数 -s\(静默，表示不输入任何额外统计信息\)。
+>
+> $  curl -d "password=123" [http://www.jtthink.com/test/update.php](http://www.jtthink.com/test/update.php) -s
 
 ---
 
+# 数字比对大小
 
+*  gt是大于的意思（large than）;  
+*  lt是小于（less than）;
+*  eq是等于（equal）;        
+*  ne是不等于（not equal）;
+*  ge是大于等于（large equal  ）;
+*  le是小于等于（less equal）。
+
+---
+
+# 解题思路
+
+1、首先判断本地的version文件，读取;
+
+2、用curl访问远程conf.txt,然后取第二行本地的 版本和远程版本进行比较，如果版本小则;
+
+3、模拟post访问update.php，并获取需要下载的地址;
+
+4、使用wget下载下来。
+
+test.sh
+
+```php
+LOCAL_VER=`cat version`
+REMOTE_VER=`curl http://www.jtthink.com/test/conf.txt -s | sed -n '2p'`
+
+if [ $LOCAL_VER -lt $REMOTE_VER ]
+   then
+   GET_UPDATE = `curl -d "password=123" http://www.jtthink.com/test/update.php -s`
+   wget $GET_UPDATE
+   echo "2" > version
+fi
+```
+
+未完待续...
 
