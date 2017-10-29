@@ -2,7 +2,7 @@
 
 ```py
 # 赋值
-myname=shenyi
+myname=shenyi
 
 # 打印
 echo $myname 
@@ -31,7 +31,7 @@ int main (int argc, char* argv[]) {
     putenv("myname=lee");    
     char *name=getenv("myname");
     printf("my name is %s\n", name);
-      
+
     if (argc == 2) {
       if (strcmp(argv[1], "-version") == 0) {
         printf("god version is 1.0\n");
