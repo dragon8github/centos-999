@@ -49,3 +49,27 @@
 
 5、第七位是用户默认的shell。
 
+---
+
+# groupadd：创建用户组
+
+> $ groupadd 组名
+>
+> $ cat /etc/group 查看群组
+
+新建的用户默认为创建同名用户组， 当这个组只有一个用户时你又执行了删除操作， 那么这个组也没了。
+
+---
+
+# 禁止用户shell登录
+
+基本使用： 
+
+> usermod -s /sbin/nologin &lt;用户名&gt;
+
+创建时也可以：
+
+> useradd -s /sbin/nologin &lt;用户名&gt;
+
+---
+
