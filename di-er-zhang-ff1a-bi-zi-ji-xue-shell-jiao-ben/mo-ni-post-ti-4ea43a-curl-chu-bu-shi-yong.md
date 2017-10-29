@@ -22,12 +22,13 @@ curl很牛逼的地方是还能模拟POST提交：
 
 # 数字比对大小
 
-*  gt是大于的意思（large than）;  
-*  lt是小于（less than）;
-*  eq是等于（equal）;        
-*  ne是不等于（not equal）;
-*  ge是大于等于（large equal  ）;
-*  le是小于等于（less equal）。
+* gt是大于的意思（large than）;  
+* lt是小于（less than）;
+* eq是等于（equal）;        
+* ne是不等于（not equal）;
+* ge是大于等于（large equal
+  ）;
+* le是小于等于（less equal）。
 
 ---
 
@@ -37,7 +38,7 @@ curl很牛逼的地方是还能模拟POST提交：
 
 2、用curl访问远程conf.txt,然后取第二行本地的 版本和远程版本进行比较，如果版本小则;
 
-3、模拟post访问update.php，并获取需要下载的地址;
+3、模拟post访问update.php，并获取需要下载的地址;
 
 4、使用wget下载下来。
 
