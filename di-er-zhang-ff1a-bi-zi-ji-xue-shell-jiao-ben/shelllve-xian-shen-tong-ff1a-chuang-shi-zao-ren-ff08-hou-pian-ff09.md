@@ -50,7 +50,7 @@ USER_NAME='god'
 # 添加用户
 useradd $USER_NAME
 
-# $?显示最后命令的退出状态。0表示没有错误，其它任何值表明有错误(或执行不成功)
+# $? 显示最后命令的退出状态。0表示没有错误，其它任何值表明有错误(或执行不成功)
 if [ $? -eq 0 ]
   then
       # 使用passwd 修改密码需要提示和确认，使用 --stdin 标准输入（键盘)强迫设置
@@ -61,5 +61,9 @@ if [ $? -eq 0 ]
 fi
 ```
 
+![](/assets/edcbb753-d131-44a6-a05d-ff4a6fc3412eimport.png)
 
+如果用户已存在的情况：
+
+![](/assets/cb5264ff-0fd5-48d0-91ba-bcf793afbd08import.png)
 
