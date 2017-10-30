@@ -6,15 +6,13 @@
 
 2、判断当前目录是否存在d.zip, 如果不存在则从网上下载，并存储为d.zip；
 
-3、判断当前目录是否存在 licence 文件，如果不存在则从网上下载 conf.txt, 读取第一行，保存为licence文件名。
+3、判断当前目录是否存在 licence 文件，如果不存在则从网上下载 conf.txt, 读取第一行，保存为 licence 文件名。
 
 ---
 
 # Wget：使用率最高的Linux下载工具
 
-使用非常简单。
-
-wget 命令后加上网址即可将内容下载到当前目录，并以网址最后一个/后的字符串作为文件名。
+使用非常简单，wget 命令后加上网址即可将内容下载到当前目录，并以网址最后一个/后的字符串作为文件名。
 
 > #### ** $ wget **[http://www.jtthink.com/test/d.rar](http://www.jtthink.com/test/d.rar)
 >
