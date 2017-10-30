@@ -41,7 +41,7 @@ curl很牛逼的地方是还能模拟POST提交：
 
 4、使用wget下载下来。
 
-新建脚本文件 test.sh：
+test.sh：
 
 ```php
 LOCAL_VER=`cat version`
@@ -55,5 +55,5 @@ if [ $LOCAL_VER -lt $REMOTE_VER ]
 fi
 ```
 
-未完待续...
+
 
