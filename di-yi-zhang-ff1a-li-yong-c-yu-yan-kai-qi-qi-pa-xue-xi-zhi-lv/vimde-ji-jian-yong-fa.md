@@ -4,6 +4,22 @@
 
 2、往往我们用它来修改一些配置文件或简单的代码文件、脚本等。而在正式服务器上是没有友好界面IDE提供的。这时候我们只能依赖vim。
 
+安装下载代码高亮版的VIM
+
+> **$ yum search vim**
+>
+> \# 找到 vim-enhanced.x86\_64 版本
+>
+> **$ yum install vim-enhanced.x86\_64**
+>
+>  \# 安装完成之后打开任意 .c 文件可以欣赏代码高亮
+
+![](/assets/cd626303-53cd-4402-a2db-654b5d375950import.png)
+
+![](/assets/f6e37822-3f3c-4b98-9220-0275743dbf2aimport.png)
+
+![](/assets/b68a4b23-32ec-457b-8465-578246b709aeimport.png)
+
 # 修改文件和保存
 
 1、按一下字母i。进入 insert 模式，可以编写内容
