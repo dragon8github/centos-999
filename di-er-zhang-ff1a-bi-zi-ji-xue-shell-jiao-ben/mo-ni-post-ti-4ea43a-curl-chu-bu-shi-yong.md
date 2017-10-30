@@ -44,16 +44,27 @@ curl很牛逼的地方是还能模拟POST提交：
 test.sh：
 
 ```php
-LOCAL_VER=`cat version`
 REMOTE_VER=`curl http://www.jtthink.com/test/conf.txt -s | sed -n '2p'`
 
-if [ $LOCAL_VER -lt $REMOTE_VER ]
-   then
-      GET_UPDATE = `curl -d "password=123" http://www.jtthink.com/test/update.php -s`
-      wget $GET_UPDATE
-      echo "2" > version
+# 定义函数
+function download () {
+        # 获取服务器最新资源的下载地址
+        # 注意神坑：``的等号两边不能有空格
+        # 这里的$1就是传递进来参数的"password=123"
+        GET_UPDATE=`curl -d $1 http://www.jtthink.com/test/update.php -s`
+        # 根据下载地址获取最新的资源到本地
+        wget $GET_UPDATE
+        # 将最新的版本信息写入version文件（这里写死了）
+        echo 2 > version
+}
+
+# 如果 version 文件不存在 或者 当前版本低于服务器最新版本
+if [ ! -f version ] || [ `cat version` != $REMOTE_VER ]
+    then
+        # 更新下载最新的版本
+        download "password=123"
 fi
 ```
 
-
+![](/assets/5d3ddff7-5632-411e-a245-0adaa896a82eimport.png)
 
