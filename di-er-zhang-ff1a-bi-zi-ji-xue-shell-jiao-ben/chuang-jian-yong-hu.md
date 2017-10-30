@@ -59,9 +59,13 @@
 
 # groupadd：创建用户组
 
-> $ groupadd 组名
->
-> $ cat /etc/group 查看群组
+创建用户组：
+
+> $ groupadd &lt;组名&gt;
+
+查看群组：
+
+> $ cat /etc/group
 
 新建的用户默认为创建同名用户组， 当这个组只有一个用户时你又执行了删除操作， 那么这个组也没了。
 

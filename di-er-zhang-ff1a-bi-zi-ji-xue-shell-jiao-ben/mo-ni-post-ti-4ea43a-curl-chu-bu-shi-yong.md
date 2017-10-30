@@ -49,7 +49,7 @@ REMOTE_VER=`curl http://www.jtthink.com/test/conf.txt -s | sed -n '2p'`
 # 定义函数
 function download () {
         # 获取服务器最新资源的下载地址
-        # 注意神坑：``的等号两边不能有空格
+        # 注意神坑：``的等号两边不能有空格。千万不要手贱！
         # 这里的$1就是传递进来参数的"password=123"
         GET_UPDATE=`curl -d $1 http://www.jtthink.com/test/update.php -s`
         # 根据下载地址获取最新的资源到本地
