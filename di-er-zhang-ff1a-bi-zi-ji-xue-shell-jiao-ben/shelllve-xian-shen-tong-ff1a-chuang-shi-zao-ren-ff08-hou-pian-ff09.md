@@ -35,5 +35,31 @@
 >
 > jtthink:x:1001:1001::/home/jtthink:/bin/bash
 
+---
+
+# 回顾需求
+
+1. 判断用户是否存在\(譬如叫god\),没有则创建；
+
+2. 创建后设置密码为123；
+
+```php
+USER_COUNT=`cat /etc/passwd | grep '^god:' -c`
+USER_NAME='god'
+
+# 添加用户
+useradd $USER_NAME
+
+# $?显示最后命令的退出状态。0表示没有错误，其它任何值表明有错误(或执行不成功)
+if [ $? -eq 0 ]
+  then
+      # 使用passwd 修改密码需要提示和确认，使用 --stdin 标准输入（键盘)强迫设置
+      echo '123' | passwd $USER_NAME --stdin
+      echo 'done'
+  else
+      echo 'error'
+fi
+```
+
 
 

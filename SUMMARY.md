@@ -43,4 +43,5 @@
 * [curl参数](kuo-zhang-yue-du/curlcan-shu.md)
 * [useradd参数](kuo-zhang-yue-du/useraddcan-shu.md)
 * [usermod参数](kuo-zhang-yue-du/usermodcan-shu.md)
+* [grep参数](kuo-zhang-yue-du/grepcan-shu.md)
 
