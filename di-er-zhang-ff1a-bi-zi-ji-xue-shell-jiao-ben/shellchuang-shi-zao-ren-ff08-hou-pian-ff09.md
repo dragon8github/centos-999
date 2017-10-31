@@ -8,7 +8,7 @@
 
 > $ su - god
 
-以 god 用户的身份去执行命令。当然作用也是在god用户的空间中
+以 god 用户的身份去执行命令。当然作用也是在god用户的空间中。
 
 > $ su - god -c 'echo "i am god" &gt; test.txt '
 
