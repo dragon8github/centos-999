@@ -17,7 +17,7 @@ Linux 开机后就会运行第一个进程/sbin/init 。
 
 # 开始玩一下多线程
 
-我们加入新的头文件 &lt;unistd.h&gt;  使用 fork\(\);即可开启多线程了。然后重新编译一下`gcc me.c -o me`
+我们加入新的头文件 &lt;unistd.h&gt;  使用 fork\(\) 即可开启多线程了。然后重新编译一下`gcc me.c -o me`启动 ./me 然后观察一下进程。
 
 ```c
 #include <stdio.h>
@@ -32,11 +32,40 @@ int main() {
 }
 ```
 
-启动 ./me 然后观察一下进程。我们会发现进程变成了两个。而 ./me 也输出了两个 start 。
+我们会发现进程变成了两个。而 ./me 也输出了两个 start 。说明这个进程运行了两遍。
 
 ![](/assets/2f6d0edc-06e0-4bdb-8a5d-ece472149d51import.png)
 
-
-
 我们还发现。pid为4215的进程，它的父id为4214，这正对应着初号me进程。说明后者是前者派生出来的子进程。
+
+# fork函数
+
+创建一个与原进程完全相同的进程，原来的进程成为新进程的父进程。
+
+一旦执行fork\(\),本尊进程变成了父进程，新的那个是子进程。
+
+返回值：
+
+*   &gt;0  代表是父进程 
+* =0   代表是子进程
+*  &lt;0  代表是出错啦
+
+尝试写两个fork\(\)：
+
+```c
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+    fork();
+    fork();
+    printf("start \n");
+    sleep(20);
+    printf("end \n");
+    return 0;
+}
+
+```
+
+![](/assets/e001aa41-26e9-423e-964e-ce76d7fb4226import.png)
 
