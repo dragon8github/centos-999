@@ -27,6 +27,7 @@
 * [Shell创世造人（前篇）](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/chuang-jian-yong-hu.md)
 * [Shell创世造人（中篇）](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/shelllve-xian-shen-tong-ff1a-chuang-shi-zao-ren-ff08-hou-pian-ff09.md)
 * [Shell创世造人（后篇）](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/shellchuang-shi-zao-ren-ff08-hou-pian-ff09.md)
+* [SSH学习：普通进程是怎么产生和消失的](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/sshxue-xi-ff1a-pu-tong-jin-cheng-shi-zen-yao-chan-sheng-he-xiao-shi-de.md)
 
 ## 第三章：iptables + Apache + Python 红蓝军大战篇
 
