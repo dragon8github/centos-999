@@ -46,4 +46,5 @@
 * [useradd参数](kuo-zhang-yue-du/useraddcan-shu.md)
 * [usermod参数](kuo-zhang-yue-du/usermodcan-shu.md)
 * [grep参数](kuo-zhang-yue-du/grepcan-shu.md)
+* [ps参数](kuo-zhang-yue-du/pscan-shu.md)
 
