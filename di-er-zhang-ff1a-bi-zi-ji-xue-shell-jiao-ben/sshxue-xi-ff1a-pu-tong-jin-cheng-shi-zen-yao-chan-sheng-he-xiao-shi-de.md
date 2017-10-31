@@ -31,13 +31,27 @@ ps命令重要参数如下：
 
 > ps -ef \| grep &lt;你要查询的字符串，如httpd、mysqld&gt;
 
-
-
 ---
 
-我们观察一下god的进程情况。来了解什么是进程。
+# 普通进程
 
-在打开一个“终端”，切换到god用户，一个切换到root用户。我们通过root用户来观察god用户。默认如下： ![](/assets/9624e640-1a28-48c2-a94a-7cfc1c40194eimport.png)在god中新建一个测试sh脚本：
+我们观察一下 god 来了解什么是进程。
+
+打开两个“终端”，一个切换到god用户，一个切换到root用户。我们通过root用户来观察god用户。默认如下： ![](/assets/9624e640-1a28-48c2-a94a-7cfc1c40194eimport.png)在god中新建一个测试脚本test.sh：
+
+```php
+echo "start"
+sleep 5
+echo "end"
+```
+
+运行它，并且尽快切换到root的账号下查看它的情况。
+
+![](/assets/cee618ed-7704-420a-a124-b1267f5773d0import.png)
 
 
+
+等待god输出end之后。我们再查看一下：
+
+![](/assets/0e09a307-2e46-48de-a485-11e316fb197dimport.png)
 
