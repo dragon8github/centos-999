@@ -49,9 +49,11 @@ echo "end"
 
 ![](/assets/cee618ed-7704-420a-a124-b1267f5773d0import.png)
 
-
-
 等待god输出end之后。我们再查看一下：
 
 ![](/assets/0e09a307-2e46-48de-a485-11e316fb197dimport.png)
+
+但我们发现。进程名中的名字，不包含任何test.sh，只有bash和sleep。这说明进程不会把程序名打印出来。
+
+除非你运行的的是c语言。那么就会打印出你程序的名字。
 
