@@ -17,7 +17,9 @@ Linux 开机后就会运行第一个进程/sbin/init 。
 
 # 开始玩一下多线程
 
-我们加入新的头文件 &lt;unistd.h&gt;  使用 fork\(\) 即可开启多线程了。然后重新编译一下`gcc me.c -o me`启动 ./me 然后观察一下进程。
+我们使用C语言来接触一下多线程。我们加入新的头文件 &lt;unistd.h&gt;  使用 fork\(\) 即可开启多线程了。
+
+然后重新编译一下`gcc me.c -o me`启动 ./me 然后观察一下进程。
 
 ```c
 #include <stdio.h>
