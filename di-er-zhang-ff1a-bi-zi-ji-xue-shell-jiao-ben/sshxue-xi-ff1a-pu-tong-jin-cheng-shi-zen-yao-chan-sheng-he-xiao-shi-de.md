@@ -57,3 +57,20 @@ echo "end"
 
 除非你运行的的是c语言。那么就会打印出你程序的名字。
 
+创建一个me.c 并且编译执行
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    printf("start\n");
+    sleep(5);
+    printf("end\n");
+}
+```
+
+![](/assets/0f686ee7-5c7b-4ada-a9b5-7e2608767d96import.png)
+
+我们就可以在进程中看到me了。
+
