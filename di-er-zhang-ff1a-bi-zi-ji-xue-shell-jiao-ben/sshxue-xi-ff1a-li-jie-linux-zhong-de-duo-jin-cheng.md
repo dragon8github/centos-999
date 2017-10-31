@@ -44,13 +44,7 @@ int main() {
 
 一旦执行fork\(\),本尊进程变成了父进程，新的那个是子进程。
 
-返回值：
-
-*   &gt;0  代表是父进程 
-* =0   代表是子进程
-*  &lt;0  代表是出错啦
-
-尝试写两个fork\(\)：
+#### 尝试写两个fork\(\)：
 
 ```c
 #include <stdio.h>
@@ -64,8 +58,41 @@ int main() {
     printf("end \n");
     return 0;
 }
-
 ```
 
 ![](/assets/e001aa41-26e9-423e-964e-ce76d7fb4226import.png)
+
+为什么是4个。其实仔细看看、想想还是可以理解的。这是由于子进程自己又产生了新的子进程。
+
+关键是已经有点乱套了。我们希望所有的子进程都是经由同一个父进程。
+
+#### fork\(\)返回值：
+
+* &gt;0  代表是父进程
+
+* =0   代表是子进程
+
+* &lt;0  代表是出错啦
+
+```c
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+    int pid;
+    int i;
+    // 创建四个子进程
+    for(i = 0; i <= 4; i++) {
+       pid = fork();
+       //必须大于0，也就是必须是父进程创建,子进程不许创建
+       if(pid <= 0) break;
+    }
+    printf("start \n");
+    sleep(20);
+    printf("end \n");
+    return 0;
+}
+```
+
+![](/assets/1799af8e-7db6-48e8-a9b2-fee2d2d11c02import.png)
 
