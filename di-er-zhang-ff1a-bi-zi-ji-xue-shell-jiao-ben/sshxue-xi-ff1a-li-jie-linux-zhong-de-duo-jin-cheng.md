@@ -36,3 +36,7 @@ int main() {
 
 ![](/assets/2f6d0edc-06e0-4bdb-8a5d-ece472149d51import.png)
 
+
+
+我们还发现。pid为4215的进程，它的父id为4214，这正对应着初号me进程。说明后者是前者派生出来的子进程。
+
