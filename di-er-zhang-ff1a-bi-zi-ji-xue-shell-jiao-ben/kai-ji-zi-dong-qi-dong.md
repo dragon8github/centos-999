@@ -61,7 +61,7 @@
 
 # 启动我们的服务
 
-> service shenyid
+> service shenyid start
 
 ![](/assets/28ed1c1a-e552-4a73-b72f-fccf8361a61bimport.png)
 

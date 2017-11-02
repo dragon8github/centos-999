@@ -1,0 +1,28 @@
+通常有以下三种：
+
+```js
+showage () {
+  return '123'
+}
+temp=`showage`
+echo $temp
+
+
+showage () {
+  return '123'
+}
+showage
+echo $?
+
+
+temp=''
+showage () {
+  temp='123'
+}
+showage
+echo $temp
+
+```
+
+
+
