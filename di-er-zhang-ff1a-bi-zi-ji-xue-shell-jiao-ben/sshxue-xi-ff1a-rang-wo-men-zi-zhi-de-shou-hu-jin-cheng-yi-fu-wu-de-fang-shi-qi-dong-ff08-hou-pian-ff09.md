@@ -10,7 +10,7 @@ PID_FILE='/etc/shenyid.pid'
 
 start () {
   if [ -f $PID_FILE ] 
-    	then
+        then
           echo 'god_me is already running'
       else
           echo '123' > $PID_FILE
@@ -23,7 +23,6 @@ stop () {
    echo 'god_me is stoped'
 }
 
-# /home/god/bin/god_me
 case $1 in
    xxoo)
       start

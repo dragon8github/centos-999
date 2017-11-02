@@ -22,6 +22,7 @@
 ## 第二章：逼自己学 shell 脚本
 
 * [权限解读 与 Shell入门](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/quan-xian-jie-du-yu-shell-ru-men.md)
+* [shell语法：函数的定义和使用](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/shellyu-fa-ff1a-han-shu-de-ding-yi-he-shi-yong.md)
 * [模拟软件升级：Wget下载命令 与 文件处理工具Sed](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/shellff1a-xia-zai.md)
 * [模拟软件升级：Curl初步使用（POST提交）](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/mo-ni-post-ti-4ea43a-curl-chu-bu-shi-yong.md)
 * [Shell创世造人（前篇）](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/chuang-jian-yong-hu.md)
@@ -32,7 +33,6 @@
 * [SSH学习：抱大腿就能成为守护进程](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/sshxue-xi-ff1a-bao-da-tui-jiu-neng-cheng-wei-shou-hu-jin-cheng.md)
 * [SSH学习：让我们自制的守护进程以服务的方式启动（前篇）](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/kai-ji-zi-dong-qi-dong.md)
 * [SSH学习：让我们自制的守护进程以服务的方式启动（后篇）](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/sshxue-xi-ff1a-rang-wo-men-zi-zhi-de-shou-hu-jin-cheng-yi-fu-wu-de-fang-shi-qi-dong-ff08-hou-pian-ff09.md)
-* [shell语法：函数的定义和使用](di-er-zhang-ff1a-bi-zi-ji-xue-shell-jiao-ben/shellyu-fa-ff1a-han-shu-de-ding-yi-he-shi-yong.md)
 
 ## 第三章：iptables + Apache + Python 红蓝军大战篇
 
