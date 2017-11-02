@@ -47,9 +47,9 @@ esac
 
 调用示例：
 
-> service shenyid xxoo
+> $ service shenyid xxoo
 >
-> service shenyid ooxx
+> $ service shenyid ooxx
 
 
 
