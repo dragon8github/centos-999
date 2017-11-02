@@ -2,9 +2,10 @@
 
 ```js
 showage () {
-  return '123'
+  echo '123'
 }
-temp=`showage`
+temp=`showage` 
+# temp=$(showage) 
 echo $temp
 
 
