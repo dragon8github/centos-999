@@ -6,7 +6,7 @@
 2. 如何接受传入的参数（以 xxoo 和 ooxx为例）,获取方式依然是熟悉的$1;
 3. 通过文件的形式防止重复执行服务;
 
-```c
+```php
 #add for chkconfig
 #chkconfig:35 80 10
 #description:i am god
@@ -50,6 +50,10 @@ esac
 > $ service shenyid xxoo
 >
 > $ service shenyid ooxx
+
+---
+
+# 结束进程：杀杀杀
 
 
 
