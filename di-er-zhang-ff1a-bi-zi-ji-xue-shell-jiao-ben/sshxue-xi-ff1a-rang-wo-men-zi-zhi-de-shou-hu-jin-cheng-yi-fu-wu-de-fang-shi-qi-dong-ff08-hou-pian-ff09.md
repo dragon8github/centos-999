@@ -4,34 +4,32 @@
 
 # pgrep：通过程序的名字来查询进程的工具
 
-* 重要参数：  -l 列出程序名和进程ID
+* 重要参数：-l 列出程序名和进程ID
 
-> $ pgrep &lt;进程名&gt;
->
-> $ pgrep god -l
+> $ pgrep &lt;进程名 \| 表达式&gt;
 
-# pkill：根据进程名杀掉符合条件的所有进程
+示例：
 
+> $ pgrep ^me$ -l
 
+![](/assets/9e4c0bfa-5b5c-4221-8ac0-a06ac5133fd5import.png)
 
+# pkill：根据进程名杀掉符合条件的所有进程
 
+> $ pkill ^me$
 
-
-
-
+![](/assets/93a45d7f-3e79-4a11-b6a3-6b119d7eca6fimport.png)
 
 ---
 
-本节课我们不再使用 /home/god/me 程序来启动和测试我们的服务。我们使用简单的输出代码来替代。
-
-以下代码展示了:
+完整代码示例，以下代码展示了:
 
 1. 如何定义和使用函数;
-2. 如何接收传入的参数（以 xxoo 和 ooxx为例）， 获取方式依然是熟悉的$1;
+2. 如何接收传入的参数（xxoo代表开启 、ooxx代表关闭）， 获取方式依然是熟悉的$1;
 3. 通过文件的形式防止重复执行服务;
 4. 杀死（关闭）程序。
 
-![](/assets/d6a525a9-7304-4493-9202-400922ce7fedimport.png)
+![](/assets/d2ac6e56-c212-406d-a796-af80ff61ad6eimport.png)
 
 ```php
 #add for chkconfig
