@@ -97,9 +97,9 @@ centos7 中是使用 systemctl 命令来控制的：
 
 ![](/assets/43c7a4e3-00c4-4251-af4e-83786632e76fimport.png)
 
-其中 `/etc/httpd/conf/httpd.conf`  文件夹就是httpd的配置文件。
+其中 `/etc/httpd/conf/httpd.conf`  文件夹就是httpd的配置文件。我是如何找到的呢？
+
+> $ rpm -qal httpd \| grep ".conf"
 
 进入应该可以找到 `DocumentRoot "/var/www/html"`说明我们的默认站点默认路径就在这里。
-
-
 
