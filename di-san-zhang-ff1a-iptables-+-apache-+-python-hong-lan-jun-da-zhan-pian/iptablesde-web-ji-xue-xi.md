@@ -13,11 +13,23 @@
 
 ---
 
-# 查看iptables是否存在
+# 查看 iptables 是否存在
 
 Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 来启动。
 
 > $ service iptables start
+
+如果不存在，可以使用yum安装并配置一下：
+
+> $ yum install iptables
+>
+> $ yum install iptables-services -y
+>
+> $ cp /usr/libexec/iptables/iptables.init /etc/init.d/iptables
+>
+> $ service iptables start
+
+![](/assets/0ed9d991-ec0d-41eb-8a6e-f19cf4655cb7import.png)
 
 我们通过查看 `/etc/init.d/iptables` 脚本文件，发现它实际上是启动了
 
@@ -37,7 +49,7 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 这个叫做：input
 
-譬如我们用SSH连接服务器、访问网站等，都是把数据包发给服务器，然后等待服务器响应
+譬如我们用SSH连接服务器、访问网站等，都是把数据包发给服务器，然后等待服务器响应。
 
 ![](/assets/9d4a564f-0d2e-484a-bf2f-3bee2393d709import.png)这个叫做：output
 
@@ -52,8 +64,6 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 为了更好的理解和贴合我们的web级。我们来快速装一个apache服务，速度的搭建一个静态网站。
 
 > $ yum install httpd
-
-
 
 
 
