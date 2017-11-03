@@ -69,6 +69,8 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 # 速装 apache 服务
 
+![](/assets/8335fafd-1c9a-43e7-b380-8be82760ff88import.png)
+
 为了更好的理解和贴合我们的web级。我们来快速装一个apache服务，速度的搭建一个静态网站。
 
 > $ yum install httpd
