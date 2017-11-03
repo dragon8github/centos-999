@@ -103,6 +103,18 @@ centos7 中是使用 systemctl 命令来控制的：
 
 > $ rpm -qal httpd \| grep ".conf"
 
+或者可以使用：
+
+```
+$ httpd -V
+```
+
+根据输出的 HTTPD\_ROOT 和 SERVER\_CONFIG\_FILE 就可以确定httpd.conf的路径了
+
+![](/assets/b5565ae4-27ab-4aa2-9cf7-31edcae93adaimport.png)
+
+
+
 进入应该可以找到 `DocumentRoot "/var/www/html"`说明我们的默认站点默认路径就在这里。
 
 > cat /etc/httpd/conf/httpd.conf \| grep DocumentRoot
