@@ -30,6 +30,12 @@ centos7 中是使用 systemctl 命令来控制的：
 
 ![](/assets/43c7a4e3-00c4-4251-af4e-83786632e76fimport.png)
 
+
+
+---
+
+# 配置文件
+
 其中 `/etc/httpd/conf/httpd.conf`  文件夹就是httpd的配置文件。我是如何找到的呢？
 
 > $ rpm -qal httpd \| grep ".conf"
@@ -44,11 +50,23 @@ $ httpd -V
 
 ![](/assets/b5565ae4-27ab-4aa2-9cf7-31edcae93adaimport.png)
 
+
+
+---
+
+# 网站根目录
+
 进入应该可以找到 `DocumentRoot "/var/www/html"`说明我们的默认站点默认路径就在这里。
 
 > cat /etc/httpd/conf/httpd.conf \| grep -i DocumentRoot
 
 ![](/assets/7088f7ce-329c-4f2c-a600-0c4e9c070a8bimport.png)
+
+
+
+---
+
+# 网站端口
 
 接下来查看一下端口\(虽然我知道默认肯定是80\)
 
@@ -57,6 +75,8 @@ $ cat /etc/httpd/conf/httpd.conf | grep  -i listen
 ```
 
 ![](/assets/da0da257-0897-4cb9-9a21-1857342057ebimport.png)
+
+
 
 ---
 
