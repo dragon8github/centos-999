@@ -12,7 +12,7 @@
 rpm -qal httpd
 ```
 
-centos7 中是使用 systemctl 命令来控制的：
+centos7.x 中是使用 systemctl 命令来控制的：
 
 > $ systemctl start httpd-service
 >
