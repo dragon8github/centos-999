@@ -30,8 +30,6 @@ centos7 中是使用 systemctl 命令来控制的：
 
 ![](/assets/43c7a4e3-00c4-4251-af4e-83786632e76fimport.png)
 
-
-
 ---
 
 # 配置文件
@@ -46,11 +44,9 @@ centos7 中是使用 systemctl 命令来控制的：
 $ httpd -V
 ```
 
-根据输出的 HTTPD\_ROOT 和 SERVER\_CONFIG\_FILE 就可以确定httpd.conf的路径了
+根据输出的 **`HTTPD_ROOT`**和 **`SERVER_CONFIG_FILE`**就可以确定httpd.conf的路径了。
 
 ![](/assets/b5565ae4-27ab-4aa2-9cf7-31edcae93adaimport.png)
-
-
 
 ---
 
@@ -62,21 +58,17 @@ $ httpd -V
 
 ![](/assets/7088f7ce-329c-4f2c-a600-0c4e9c070a8bimport.png)
 
-
-
 ---
 
 # 网站端口
 
-接下来查看一下端口\(虽然我知道默认肯定是80\)
+接下来查看一下端口\(虽然我知道默认肯定是80\)。
 
 ```
 $ cat /etc/httpd/conf/httpd.conf | grep  -i listen
 ```
 
 ![](/assets/da0da257-0897-4cb9-9a21-1857342057ebimport.png)
-
-
 
 ---
 
