@@ -103,3 +103,7 @@ centos7 中是使用 systemctl 命令来控制的：
 
 进入应该可以找到 `DocumentRoot "/var/www/html"`说明我们的默认站点默认路径就在这里。
 
+> cat /etc/httpd/conf/httpd.conf \| grep DocumentRoot
+
+![](/assets/7088f7ce-329c-4f2c-a600-0c4e9c070a8bimport.png)
+
