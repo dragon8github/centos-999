@@ -73,5 +73,21 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 > $ yum install httpd
 
+centos7 中是使用 systemctl 命令来控制的：
 
+> $ systemctl start httpd-service
+>
+> $ systemctl status httpd-service
+
+![](/assets/b22699b9-f3b8-4328-b162-231f40480273import.png)
+
+将 httpd 加入自动启动的服务中：
+
+> $ systemctl start httpd-service
+>
+> $ systemctl is-enabled httpd-service
+>
+> enabled
+
+![](/assets/43c7a4e3-00c4-4251-af4e-83786632e76fimport.png)
 
