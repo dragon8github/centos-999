@@ -25,13 +25,21 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 >
 > $ yum install iptables-services -y
 >
+> $ systemctl enable iptables    \# 开机启动服务
+>
 > $ cp /usr/libexec/iptables/iptables.init /etc/init.d/iptables
 >
 > $ service iptables start
 
 ![](/assets/0ed9d991-ec0d-41eb-8a6e-f19cf4655cb7import.png)
 
-我们通过查看 `/etc/init.d/iptables` 脚本文件，发现它实际上是启动了
+检查是否开机启动服务：
+
+> $ chkconfig iptables
+>
+> 注意：正在将请求转发到“systemctl is-enabled iptables.service”。
+>
+> enabled
 
 ---
 
