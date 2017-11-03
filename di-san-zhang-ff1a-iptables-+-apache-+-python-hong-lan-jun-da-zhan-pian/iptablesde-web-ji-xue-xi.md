@@ -113,11 +113,17 @@ $ httpd -V
 
 ![](/assets/b5565ae4-27ab-4aa2-9cf7-31edcae93adaimport.png)
 
-
-
 进入应该可以找到 `DocumentRoot "/var/www/html"`说明我们的默认站点默认路径就在这里。
 
-> cat /etc/httpd/conf/httpd.conf \| grep DocumentRoot
+> cat /etc/httpd/conf/httpd.conf \| grep -i DocumentRoot
 
 ![](/assets/7088f7ce-329c-4f2c-a600-0c4e9c070a8bimport.png)
+
+接下来查看一下端口\(虽然我知道默认肯定是80\)
+
+```
+$ cat /etc/httpd/conf/httpd.conf | grep  -i listen
+```
+
+![](/assets/da0da257-0897-4cb9-9a21-1857342057ebimport.png)
 
