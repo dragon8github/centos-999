@@ -73,6 +73,12 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 > $ yum install httpd
 
+可以通过rpm命令来查询相关的安装包信息
+
+```
+rpm -qal httpd
+```
+
 centos7 中是使用 systemctl 命令来控制的：
 
 > $ systemctl start httpd-service
