@@ -8,7 +8,7 @@
 
 > $ pgrep &lt;进程名 \| 表达式&gt;
 
-示例：
+使用示例：
 
 > $ pgrep ^me$ -l
 
@@ -56,7 +56,11 @@ start () {
 }
 
 stop () {
+   # 删除文件，既删除重复执行的标识
    rm $PID_FILE -f
+   # 删除我们的进程
+   pkill ^me$
+   # 输出提示信息
    echo 'god_me is stoped'
 }
 
