@@ -1,4 +1,4 @@
-# 速装 apache 服务
+# 速装 Apache 服务
 
 ![](/assets/8335fafd-1c9a-43e7-b380-8be82760ff88import.png)
 
@@ -44,7 +44,7 @@ centos7 中是使用 systemctl 命令来控制的：
 $ httpd -V
 ```
 
-根据输出的 **`HTTPD_ROOT`**和 **`SERVER_CONFIG_FILE`**就可以确定httpd.conf的路径了。
+根据输出的 `HTTPD_ROOT`和 `SERVER_CONFIG_FILE`就可以确定httpd.conf的路径了。
 
 ![](/assets/b5565ae4-27ab-4aa2-9cf7-31edcae93adaimport.png)
 
