@@ -80,8 +80,14 @@ esac
 调用示例：
 
 > $ service shenyid xxoo
->
+
+根据我们的逻辑，输入xxoo参数就是&lt;开启&gt;的意思，并且调用了`/home/god/me`程序，然后再添加`'/etc/shenyid.pid'`文件来防止重复，然后我们查看一下进程。发现 /home/god/me 程序已经启动了：
+
+![](/assets/ff6e4e3a-3164-4f67-b93a-e4a9974a4631import.png)
+
 > $ service shenyid ooxx
 
+根据我们的逻辑，输入xxoo参数就是&lt;关闭&gt;的意思，并且杀死了/home/god/me程序，然后再删除'/etc/shenyid.pid'文件，然后我们查看一下进程。发现 /home/god/me 程序已经消失了。
 
+![](/assets/33228c2d-c046-4c8a-88b2-60cf7023a665import.png)
 
