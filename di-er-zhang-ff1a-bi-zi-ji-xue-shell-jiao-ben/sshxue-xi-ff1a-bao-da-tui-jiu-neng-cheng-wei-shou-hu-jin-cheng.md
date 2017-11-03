@@ -19,7 +19,7 @@
 int main () {
     int pid;
     while (1) {
-  
+
     }
     return 0;
 }
@@ -34,6 +34,10 @@ int main () {
 ![](/assets/8de25a3d-a730-4eb6-b169-52745000bae0import.png)
 
 ---
+
+# 自强自立就能成为守护进程
+
+![](file:///C:\Users\lizhaohong\AppData\Roaming\Tencent\QQ\Temp\`PZ5TOOME2E$SA{LW1$OJKM.jpg)![](/assets/01dce3a5-ddd5-4f76-83f7-14dbca8bb8a1import.png)
 
 我们通过编写一个C语言程序来实现守护进程。原理特别简单，就是让使本进程成为“首领进程”。
 
@@ -55,6 +59,4 @@ int main() {
 ```
 
 编译并且运行一下。我们发现god会话依然是可用的。![](/assets/92d26da8-266a-4d4c-888a-de573915811aimport.png)现在我们关闭xshell的god会话。我们发现me进程依然是存活着。（sshd消失了，说明我真的关闭了一个会话）![](/assets/3542a708-7ac4-40cf-833a-66477b671718import.png)）
-
-
 
