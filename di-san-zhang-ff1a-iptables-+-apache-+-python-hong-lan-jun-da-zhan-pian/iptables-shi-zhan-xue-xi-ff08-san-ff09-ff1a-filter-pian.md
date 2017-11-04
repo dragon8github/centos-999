@@ -3,7 +3,7 @@
 > $ iptables -P INPUT DROP
 
 * -P 代表默认策略；
-* DROP 标准行为，代表直接拒收（类似直接挂电话）；
+* DROP 标准行为，代表直接拒收（类似直接挂电话）。
 
 ---
 
@@ -11,9 +11,9 @@
 
 > $ iptables -t filter -A INPUT -p tcp --dport 80 -j DROP
 
-* -t 就是默认表 filter 
-* -p 使用什么传输协议TCP/UDP/ICMP 
-* --dport 目标端口
+* -t 就是默认表 filter ；
+* -p 使用什么传输协议，如 TCP / UDP / ICMP ；
+* --dport 目标端口。
 
 ---
 
