@@ -12,13 +12,11 @@
 * -n或–numeric 直接使用IP地址，而不通过域名服务器； 
 * -p或–programs 显示正在使用Socket的程序识别码和程序名称。
 
-
-
 ### 常见的一些命令：
 
 显示tcp模式运行状况：
 
-> $ netstat -ant 
+> $ netstat -ant
 >
 > $ netstat -ant \| greep 80
 
@@ -26,5 +24,13 @@
 
 > $ netstat -ant\| grep ESTABLISHED netstat -antp
 
+# Tcp状态
 
+1、LISTENING状态 服务启动后首先处于侦听状态；
+
+ 2、ESTABLISHED状态 ESTABLISHED的意思是建立连接。表示两台机器正在通信；
+
+3、CLOSE\_WAIT 对方主动关闭连接或者网络异常导致连接中 ；
+
+4、TIME\_WAIT 我方主动调用close\(\)断开连接，收到对方确认后状态变为TIME\_WAIT。
 
