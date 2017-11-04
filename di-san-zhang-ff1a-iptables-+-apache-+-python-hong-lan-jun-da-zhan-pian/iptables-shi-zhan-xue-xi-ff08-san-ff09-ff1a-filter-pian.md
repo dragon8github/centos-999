@@ -44,7 +44,7 @@
 >
 > $ cat /etc/sysconfig/iptables
 
-![](/assets/asads65545234234234import.png)如果我们想重新开通外部对80端口的访问。并且执行了`iptables -t filter -A INPUT -p tcp --dport 80 -j ACCEPT` 
+![](/assets/asads65545234234234import.png)如果我们想重新开通外部对80端口的访问。并且执行了`iptables -t filter -A INPUT -p tcp --dport 80 -j ACCEPT`
 
 但依然不能放行，这是为什么 ? 其实我们可以通过 /etc/sysconfig/iptables 配置规则看出端倪。
 
@@ -57,4 +57,14 @@
 这时候就可以恢复正常访问了。
 
 ![](/assets/87要图dfgdfgdfgimport.png)
+
+事实上解决方法非常多，我们也可以使用 -D 删除 / -R 替换掉 DROP 的选项都是可以的。
+
+> $ iptables -t filter -D INPUT -p tcp --dport 80 -j DROP
+
+![](/assets/asdasdxzzcvxcbvbvcbcimport.png)
+
+---
+
+
 
