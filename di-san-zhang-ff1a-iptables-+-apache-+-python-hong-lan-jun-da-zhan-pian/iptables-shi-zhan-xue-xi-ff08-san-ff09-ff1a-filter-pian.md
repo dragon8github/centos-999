@@ -34,5 +34,27 @@
 
 ---
 
+# 保存规则 ：iptables-save
 
+当服务器重启之后，我们之前所配置的规则就统统失效了。所以常用的规则应该保存到配置文件中。
+
+> $ whiuch iptables-save
+>
+> $ iptables-save &gt; /etc/sysconfig/iptables
+>
+> $ cat /etc/sysconfig/iptables
+
+![](/assets/asads65545234234234import.png)如果我们想重新开通外部对80端口的访问。并且执行了`iptables -t filter -A INPUT -p tcp --dport 80 -j ACCEPT` 
+
+但依然不能放行，这是为什么 ? 其实我们可以通过 /etc/sysconfig/iptables 配置规则看出端倪。
+
+在这里，第一个 DROP 已经执行了阻塞，后面再ACCEPT都没用了。
+
+所以要这么干：`iptables -I INPUT -p tcp --dport 80 -j ACCEPT`
+
+然后再一次保存规则：`iptables-save > /etc/sysconfig/iptables`
+
+这时候就可以恢复正常访问了。
+
+![](/assets/87要图dfgdfgdfgimport.png)
 
