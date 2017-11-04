@@ -78,11 +78,19 @@ $ cat /etc/httpd/conf/httpd.conf | grep  -i listen
 >
 > $ echo 'hello httpd' &gt; index.htm
 
-随后，我们通过ifconfig，查看eth0配置。得到虚拟机的ip地址（如192.168.128.128）。然后在本机浏览器访问url：
+随后，我们通过ifconfig，查看eth0配置。得到虚拟机的ip地址（如192.168.128.128）。在外部利用http://ip/index.htm 就可以看到网站内容：
 
 ```
 http://192.168.128.128/index.htm
 ```
 
 ![](/assets/asdas2312123import.png)
+
+---
+
+# 这说明了什么？
+
+1、我们通过input向80端口的httpd软件发起了请求；
+
+2、httpd这个软件通过output返回给我们响应。
 
