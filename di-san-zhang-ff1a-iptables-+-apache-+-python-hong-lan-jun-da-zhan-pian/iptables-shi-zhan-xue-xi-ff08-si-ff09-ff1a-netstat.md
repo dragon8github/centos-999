@@ -6,11 +6,25 @@
 ### 常见参数：
 
 * -a或–all 显示所有连线中的Socket；
-*  -t或–tcp 显示TCP传输协议的连线状况； 
+* -t或–tcp 显示TCP传输协议的连线状况； 
 * -u或–udp 显示UDP传输协议的连线状况；
-*  -l或–listening 显示监听中的服务器的Socket； 
+* -l或–listening 显示监听中的服务器的Socket； 
 * -n或–numeric 直接使用IP地址，而不通过域名服务器； 
 * -p或–programs 显示正在使用Socket的程序识别码和程序名称。
+
+
+
+### 常见的一些命令：
+
+显示tcp模式运行状况：
+
+> $ netstat -ant 
+>
+> $ netstat -ant \| greep 80
+
+显示正在通讯IP：
+
+> $ netstat -ant\| grep ESTABLISHED netstat -antp
 
 
 
