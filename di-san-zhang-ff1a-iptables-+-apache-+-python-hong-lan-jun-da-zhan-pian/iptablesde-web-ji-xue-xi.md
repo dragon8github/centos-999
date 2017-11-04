@@ -72,5 +72,17 @@ $ cat /etc/httpd/conf/httpd.conf | grep  -i listen
 
 ---
 
+# 新建一个测试页面
 
+> $ cd /var/www/html
+>
+> $ echo 'hello httpd' &gt; index.htm
+
+随后，我们通过ifconfig，查看eth0配置。得到虚拟机的ip地址（如192.168.128.128）。然后在本机浏览器访问url：
+
+```
+http://192.168.128.128/index.htm
+```
+
+![](/assets/asdas2312123import.png)
 
