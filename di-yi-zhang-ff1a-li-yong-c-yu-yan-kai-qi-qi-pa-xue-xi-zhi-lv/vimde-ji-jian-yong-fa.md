@@ -18,8 +18,6 @@
 
 ![](/assets/f6e37822-3f3c-4b98-9220-0275743dbf2aimport.png)
 
-
-
 C语言的高亮效果演示：
 
 ![](/assets/b68a4b23-32ec-457b-8465-578246b709aeimport.png)
