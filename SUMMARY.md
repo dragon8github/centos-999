@@ -40,7 +40,7 @@
 * [Iptables 实战学习（二）：速装 Apache 来垫背](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptablesde-web-ji-xue-xi.md)
 * [Iptables 实战学习（三）：filter篇](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-san-ff09-ff1a-filter-pian.md)
 * [Iptables 实战学习（四）：netstat](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-si-ff09-ff1a-netstat.md)
-* Iptables 实战学习（四）：python乱入
+* [Python乱入：安装与使用](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-si-ff09-ff1a-python-luan-ru.md)
 
 ## 第四章：Apache 应用和优化篇
 
