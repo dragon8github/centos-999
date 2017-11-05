@@ -75,6 +75,7 @@ print sys.platform
 
 # 等待交互输入
 get_code = sys.stdin.readline()
+
 # 打印出交互内容
 print 'hello' + get_code
 ```
