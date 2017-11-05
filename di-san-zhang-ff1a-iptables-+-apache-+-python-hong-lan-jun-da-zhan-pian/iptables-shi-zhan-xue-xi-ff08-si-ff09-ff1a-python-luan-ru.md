@@ -10,7 +10,7 @@
 
 # 下载和安装Python 2.7x 版本
 
-下载地址：https://www.python.org/downloads/release/python-2711/
+下载地址：[https://www.python.org/downloads/release/python-2711/](https://www.python.org/downloads/release/python-2711/)
 
 ![](/assets/asdadasdasd2312312312312import.png)我们选择XZ压缩版本的包进行下载：
 
@@ -22,15 +22,15 @@
 
 #### Xz压缩
 
-xz 是一个使用 LZMA压缩算法的无损数据压缩文件格式 \(压缩率很高\)
+xz 是一个使用 LZMA压缩算法的无损数据压缩文件格式 \(压缩率很高\)。
 
-*  -z 强制压缩 
-* -d 解压缩.xz结尾的压缩文件
+* -z 强制压缩；
+* -d 解压缩.xz结尾的压缩文件。
 
 #### tar 压缩
 
-* tar zcvf xxx.tar.gz 文件夹或文件 \(打包\) 
-* tar zxvf xx.tar.gz 解压
+* tar zcvf xxx.tar.gz 文件夹或文件 \(打包\) ；
+* tar zxvf xx.tar.gz 解压。
 
 后缀如果没有 .gz 则代表没有 使用 gzip 压缩 则把参数的 z 去掉。
 
@@ -38,7 +38,9 @@ xz 是一个使用 LZMA压缩算法的无损数据压缩文件格式 \(压缩率
 
 # Configure 这是什么？
 
-其实就是一个shell脚本，用来生成makefile. 然而这个脚本又是通过 autoconf 这个软件来生成的.由于比较复杂而且我们没有研究的必要性，所以果断跳过。
+其实就是一个shell脚本，用来生成makefile. 然而这个脚本又是通过 autoconf 这个软件来生成的.
+
+由于比较复杂而且我们没有研究的必要性，所以我们果断选择跳过。
 
 官方提供了安装方法
 
