@@ -54,5 +54,30 @@ xz 是一个使用 LZMA压缩算法的无损数据压缩文件格式 \(压缩率
 
 > $ Make install
 
+---
+
+# 通过实现功能，快速入手Python
+
+1、打印出当前操作系统版本；
+
+2、让用户输入一行字符 打印出hello + 这行字符。
+
+新建test.py
+
+```py
+#! /usr/local/bin/python
+
+# 引入标准库
+import sys
+
+# 打印出当前操作系统版本
+print sys.platform
+
+# 等待交互输入
+get_code = sys.stdin.readline()
+# 打印出交互内容
+print 'hello' + get_code
+```
+
 
 
