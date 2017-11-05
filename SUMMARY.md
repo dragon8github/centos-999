@@ -15,9 +15,9 @@
 * [指针很难？不存在的！](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/lao-shi-bi-ni-xue-guo-zhi-zhen-mei-ff1f.md)
 * [不要让你的程序孤独存在：理解什么是依赖](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/bu-yao-rang-ni-de-cheng-xu-gu-du-cun-57283a-li-jie-shi-yao-shi-yi-lai.md)
 * [让自己逐步成为 Linux 的"上帝"： 诞生](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/rang-zi-ji-zhu-bu-cheng-wei-linux-768422-shang-5e1d223a-qi-bu.md)
-* [上帝之手：C 语言获取和设置 UNIX 中的临时变量](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/c-yu-yan-huo-qu-bian-liang.md)
-* [上帝之手：永久环境变量](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/shang-di-zhi-shou-ff1a-yong-jiu-huan-jing-bian-liang.md)
-* [上帝之手：读取文件](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/shang-di-zhi-shou-ff1a-wu-suo-bu-ji.md)
+* [上帝之手（一）：C 语言获取和设置 UNIX 中的临时变量](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/c-yu-yan-huo-qu-bian-liang.md)
+* [上帝之手（二）：永久环境变量](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/shang-di-zhi-shou-ff1a-yong-jiu-huan-jing-bian-liang.md)
+* [上帝之手（三）：读取文件](di-yi-zhang-ff1a-li-yong-c-yu-yan-kai-qi-qi-pa-xue-xi-zhi-lv/shang-di-zhi-shou-ff1a-wu-suo-bu-ji.md)
 
 ## 第二章：逼自己学 Shell 脚本
 
