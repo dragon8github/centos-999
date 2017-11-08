@@ -75,9 +75,18 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 ---
 
+# 个人经验
+
+1. 如果直接使用 iptables -F 就不需要systemctl restart iptables   ；
+2.  iptables -L -n 可以查看情况   ；
+3.  如果直接对iptables进行修改。就必须使用 systemctl restart iptables 来重启服务使iptables重新读取配置生效；
+4.  如果是使用 iptables-save 用来保存当前配置。
+
+---
+
 传送门：
 
-> http://blog.csdn.net/l1028386804/article/details/50779761
+> [http://blog.csdn.net/l1028386804/article/details/50779761](http://blog.csdn.net/l1028386804/article/details/50779761)
 
 
 
