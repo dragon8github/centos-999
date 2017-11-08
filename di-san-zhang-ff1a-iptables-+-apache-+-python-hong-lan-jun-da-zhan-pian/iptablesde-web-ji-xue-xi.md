@@ -8,9 +8,7 @@
 
 可以通过rpm命令来查询相关的安装包信息
 
-```
-rpm -qal httpd
-```
+> $ rpm -qal httpd
 
 #### centos7.x 中是使用 systemctl 命令来控制的
 
@@ -18,7 +16,7 @@ rpm -qal httpd
 
 > $ systemctl start httpd.service
 
-或者依然可以使用CentOS 6.5的chkconfig命令。会自动转播
+或者依然可以使用 CentOS 6.5 的 chkconfig 命令。会自动转播：
 
 > $ chkconfig httpd
 >
@@ -48,9 +46,7 @@ rpm -qal httpd
 
 或者可以使用：
 
-```
-$ httpd -V
-```
+> $ httpd -V
 
 根据输出的 `HTTPD_ROOT`和 `SERVER_CONFIG_FILE`就可以确定httpd.conf的路径了。
 
@@ -72,9 +68,7 @@ $ httpd -V
 
 接下来查看一下端口\(虽然我知道默认肯定是80\)。
 
-```
-$ cat /etc/httpd/conf/httpd.conf | grep  -i listen
-```
+> $ cat /etc/httpd/conf/httpd.conf \| grep -i listen
 
 ![](/assets/da0da257-0897-4cb9-9a21-1857342057ebimport.png)
 
@@ -86,11 +80,9 @@ $ cat /etc/httpd/conf/httpd.conf | grep  -i listen
 >
 > $ echo 'hello httpd' &gt; index.htm
 
-随后，我们通过ifconfig，查看eth0配置。得到虚拟机的ip地址（如192.168.128.128）。在外部利用[http://ip/index.htm](http://ip/index.htm) 就可以看到网站内容：
+随后，我们通过ifconfig，查看eth0配置。得到虚拟机的ip地址（如192.168.128.128）。
 
-```
-http://192.168.128.128/index.htm
-```
+在外部访问 `http://192.168.128.128/index.htm` 就可以看到网站内容。
 
 ![](/assets/asdas2312123import.png)注意，如果你的本机访问不了虚拟机的服务器的话。说明是iptables生效了。为了不妨碍我们学习。我们先清空一下配置文件。
 
