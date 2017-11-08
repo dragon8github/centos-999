@@ -7,7 +7,7 @@
 
 ---
 
-# 禁止80端口
+# 禁止 80 端口
 
 > $ iptables -t filter -A INPUT -p tcp --dport 80 -j DROP
 
