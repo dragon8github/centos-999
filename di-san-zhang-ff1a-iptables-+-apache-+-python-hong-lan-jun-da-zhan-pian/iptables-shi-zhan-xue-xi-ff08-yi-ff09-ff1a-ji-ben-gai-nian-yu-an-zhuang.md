@@ -59,7 +59,15 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 ---
 
-# 配置文件
+# 配置文件 与 清空配置
 
-默认的iptables 配置文件在 `/etc/sysconfig/iptables`为了方便学习，我们备份一下。然后清空这里面的内容然后重启。开始一步步学习。由于配置文件内容被清空，实际上此时和没有 iptables 没什么区别。
+默认的iptables 配置文件在 `/etc/sysconfig/iptables`为了方便学习，我们备份一下。
+
+> $ cp iptables iptables.bak
+
+然后清空这里面的内容然后重启。开始一步步学习。由于配置文件内容被清空，实际上此时和没有 iptables 没什么区别。
+
+> $ iptabels -F
+
+
 
