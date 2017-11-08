@@ -12,23 +12,23 @@
 rpm -qal httpd
 ```
 
-centos7.x 中是使用 systemctl 命令来控制的：
-
-> $ systemctl start httpd-service
->
-> $ systemctl status httpd-service
-
-![](/assets/b22699b9-f3b8-4328-b162-231f40480273import.png)
+#### centos7.x 中是使用 systemctl 命令来控制的
 
 将 httpd 加入自动启动的服务中：
 
-> $ systemctl start httpd-service
+> $ systemctl start httpd.service
 
 查看 httpd 服务是否开启
 
-> $ systemctl is-enabled httpd-service
+> $ systemctl is-enabled httpd.service
 
 ![](/assets/43c7a4e3-00c4-4251-af4e-83786632e76fimport.png)
+
+查看 httpd 的服务情况
+
+> $ systemctl status httpd.service
+
+![](/assets/b22699b9-f3b8-4328-b162-231f40480273import.png)
 
 ---
 
