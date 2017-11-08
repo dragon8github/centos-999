@@ -96,7 +96,7 @@ http://192.168.128.128/index.htm
 
 > $ iptables -F
 >
-> $ iptables-save -t filter &gt; iptables
+> $ iptables-save -t filter &gt; /etc/sysconfig/iptables
 
 ---
 
