@@ -92,7 +92,11 @@ $ cat /etc/httpd/conf/httpd.conf | grep  -i listen
 http://192.168.128.128/index.htm
 ```
 
-![](/assets/asdas2312123import.png)
+![](/assets/asdas2312123import.png)注意，如果你的本机访问不了虚拟机的服务器的话。说明是iptables生效了。为了不妨碍我们学习。我们先清空一下配置文件。
+
+> $ iptables -F
+>
+> $ iptables-save -t filter &gt; iptables
 
 ---
 
