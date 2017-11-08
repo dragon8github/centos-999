@@ -38,7 +38,7 @@
 
 当服务器重启之后，我们之前所配置的规则就统统失效了。所以常用的规则应该保存到配置文件中。
 
-> $ whiuch iptables-save
+> $ which iptables-save
 >
 > $ iptables-save &gt; /etc/sysconfig/iptables
 >
@@ -72,5 +72,5 @@
 
 > $ iptables -I INPUT -p tcp -s 这里写上IP --dport 80 -j ACCEPT
 
- -s 代表来源。可以写IP 还可以封IP段。请自行搜索写法
+-s 代表来源。可以写IP 还可以封IP段。请自行搜索写法
 

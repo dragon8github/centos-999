@@ -14,9 +14,17 @@ rpm -qal httpd
 
 #### centos7.x 中是使用 systemctl 命令来控制的
 
-将 httpd 加入自动启动的服务中：
+将 httpd 加入开机启动的服务中：
 
 > $ systemctl start httpd.service
+
+或者依然可以使用CentOS 6.5的chkconfig命令。会自动转播
+
+> $ chkconfig httpd
+>
+> 注意：正在将请求转发到“systemctl is-enabled httpd.service”。
+>
+> enabled
 
 查看 httpd 服务是否开启
 
@@ -32,7 +40,7 @@ rpm -qal httpd
 
 ---
 
-# 配置文件
+# 找到 httpd 的配置文件
 
 其中 `/etc/httpd/conf/httpd.conf`  文件夹就是httpd的配置文件。我是如何找到的呢？
 
