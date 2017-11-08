@@ -23,10 +23,10 @@ centos7.x 中是使用 systemctl 命令来控制的：
 将 httpd 加入自动启动的服务中：
 
 > $ systemctl start httpd-service
->
+
+查看 httpd 服务是否开启
+
 > $ systemctl is-enabled httpd-service
->
-> enabled
 
 ![](/assets/43c7a4e3-00c4-4251-af4e-83786632e76fimport.png)
 
@@ -78,7 +78,7 @@ $ cat /etc/httpd/conf/httpd.conf | grep  -i listen
 >
 > $ echo 'hello httpd' &gt; index.htm
 
-随后，我们通过ifconfig，查看eth0配置。得到虚拟机的ip地址（如192.168.128.128）。在外部利用http://ip/index.htm 就可以看到网站内容：
+随后，我们通过ifconfig，查看eth0配置。得到虚拟机的ip地址（如192.168.128.128）。在外部利用[http://ip/index.htm](http://ip/index.htm) 就可以看到网站内容：
 
 ```
 http://192.168.128.128/index.htm
