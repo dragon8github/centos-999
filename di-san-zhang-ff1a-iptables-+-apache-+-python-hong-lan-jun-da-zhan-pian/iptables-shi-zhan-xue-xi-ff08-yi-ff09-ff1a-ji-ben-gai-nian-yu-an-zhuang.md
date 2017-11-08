@@ -35,21 +35,23 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 > $ service iptables start
 
-如果不存在，可以使用yum安装并配置一下：
+如果是 7.x 系列则不存在，需要手动安装一下：
 
 > $ yum install iptables
 >
 > $ yum install iptables-services -y
->
-> $ systemctl enable iptables    \# 开机启动服务
->
-> $ cp /usr/libexec/iptables/iptables.init /etc/init.d/iptables
->
+
+**开启 iptables 服务：**
+
+> $ systemctl enable iptables
+
+**设置开机启动服务：**
+
 > $ service iptables start
 
 ![](/assets/0ed9d991-ec0d-41eb-8a6e-f19cf4655cb7import.png)
 
-检查是否开机启动服务：
+**检查是否开机启动服务：**
 
 > $ chkconfig iptables
 >
