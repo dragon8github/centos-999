@@ -45,10 +45,10 @@
 
 # 规则管理
 
-* -A：追加，在当前链的最后新增一个规则；
-* -I &lt;rule&gt;：插入，把当前规则插入为第几条；
-* -R &lt;rule&gt;：替换 / 修改第几条规则 格式：iptables -R 3 &lt;...&gt;；
-* -D &lt;rule&gt;：删除，明确指定删除第几条规则。
+* -A &lt;rule&gt;：追加，在当前链的最后新增一个规则；
+*  -I &lt;rule \| num&gt;：插入，把当前链第N条插入，默认在首部插入；
+* -R &lt;rule \| num&gt;：替换，第几条规则格式，如` iptables -R 3 <rule>`；
+* -D &lt;rule \| num&gt;：删除，明确指定删除第几条规则，如删除第二条规则`iptables -D INPUT 2`。
 
 ---
 
