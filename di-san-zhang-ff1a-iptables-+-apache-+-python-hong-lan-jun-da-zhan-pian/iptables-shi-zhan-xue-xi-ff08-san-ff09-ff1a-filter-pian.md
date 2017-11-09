@@ -19,7 +19,7 @@
 
 所以要这么干：`iptables -I INPUT -p tcp --dport 80 -j ACCEPT`
 
-**（PS：最好保存规则：**`iptables-save > /etc/sysconfig/iptables`**这样子下次重启就自动读取了。）**
+（PS：最好保存规则：`iptables-save > /etc/sysconfig/iptables`这样子下次重启就自动读取了。）
 
 ![](/assets/87要图dfgdfgdfgimport.png)
 
