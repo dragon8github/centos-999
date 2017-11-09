@@ -1,11 +1,11 @@
-# ![](/assets/吖吖zzzzc6453534534534import.png)
-
 # 最简单的禁止访问：一律红灯
 
 > $ iptables -P INPUT DROP
 
 * -P 代表默认策略；
 * DROP 标准行为，代表直接拒收（类似直接挂电话）。
+
+# ![](/assets/吖吖zzzzc6453534534534import.png)
 
 ---
 

@@ -6,6 +6,8 @@
 
 守护进程指的就是，哪怕会话结束。它所产生的进程依然存在。如何实现呢？我们往下看。
 
+![](/assets/zz78987987978978----8907078import.png)
+
 ---
 
 先来证明一下，普通进程关闭会话就会结束进程的特点。
@@ -37,7 +39,7 @@ int main () {
 
 # 自强自立就能成为守护进程
 
-![](file:///C:\Users\lizhaohong\AppData\Roaming\Tencent\QQ\Temp\`PZ5TOOME2E$SA{LW1$OJKM.jpg)![](/assets/01dce3a5-ddd5-4f76-83f7-14dbca8bb8a1import.png)
+![](file:///C:\Users\lizhaohong\AppData\Roaming\Tencent\QQ\Temp`PZ5TOOME2E$SA{LW1$OJKM.jpg)![](/assets/01dce3a5-ddd5-4f76-83f7-14dbca8bb8a1import.png)
 
 我们通过编写一个C语言程序来实现守护进程。原理特别简单，就是让使本进程成为“首领进程”。
 
