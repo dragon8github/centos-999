@@ -1,4 +1,4 @@
-# 学习新工具 netstat
+# netstat 有什么用？
 
 * 显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况；
 * 提供TCP连接，TCP和UDP监听，进程内存管理的相关报告。
@@ -24,13 +24,12 @@
 
 > $ netstat -ant\| grep ESTABLISHED netstat -antp
 
-# Tcp状态
+### Tcp 状态：
 
-1、LISTENING：服务启动后首先处于侦听状态；
+* LISTENING：服务启动后首先处于侦听状态；
+* ESTABLISHED：建立连接。表示两台机器正在通信；
+* CLOSE\_WAIT： 对方主动关闭连接或者网络异常导致连接中 ；
+* TIME\_WAIT： 我方主动调用close\(\)断开连接，收到对方确认后状态变为TIME\_WAIT。
 
-2、ESTABLISHED：建立连接。表示两台机器正在通信；
 
-3、CLOSE\_WAIT： 对方主动关闭连接或者网络异常导致连接中 ；
-
-4、TIME\_WAIT： 我方主动调用close\(\)断开连接，收到对方确认后状态变为TIME\_WAIT。
 
