@@ -97,6 +97,8 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 传送门：
 
 > [http://blog.csdn.net/l1028386804/article/details/50779761](http://blog.csdn.net/l1028386804/article/details/50779761)
+>
+> http://www.linuxidc.com/Linux/2014-11/109236.htm
 
 
 

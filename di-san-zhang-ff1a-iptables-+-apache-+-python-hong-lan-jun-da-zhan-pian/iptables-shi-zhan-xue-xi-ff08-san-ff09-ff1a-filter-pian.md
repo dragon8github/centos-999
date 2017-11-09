@@ -9,6 +9,28 @@
 
 ---
 
+# 思考题
+
+如果我们想重新开通外部对80端口的访问，执行了`iptables -t filter -A INPUT -p tcp --dport 80 -j ACCEPT`
+
+但依然不能放行，这是为什么 ? ？？
+
+其实我们可以通过 `iptables-save` 查看iptables配置规则。在这里，第一个 DROP 已经执行了阻塞，后面再ACCEPT都没用了。
+
+所以要这么干：`iptables -I INPUT -p tcp --dport 80 -j ACCEPT`
+
+**（PS：最好保存规则：**`iptables-save > /etc/sysconfig/iptables`**这样子下次重启就自动读取了。）**
+
+![](/assets/87要图dfgdfgdfgimport.png)
+
+事实上，我们也可以使用 -D （删除） / -R （替换） DROP 的选项都是可以实现的。
+
+> $ iptables -t filter -D INPUT -p tcp --dport 80 -j DROP
+
+![](/assets/asdasdxzzcvxcbvbvcbcimport.png)
+
+---
+
 # 禁止 80 端口
 
 > $ iptables -t filter -A INPUT -p tcp --dport 80 -j DROP
@@ -47,30 +69,6 @@
 > $ cat /etc/sysconfig/iptables
 
 # ![](/assets/asads65545234234234import.png)
-
----
-
-# 思考题
-
-如果我们想重新开通外部对80端口的访问，执行了`iptables -t filter -A INPUT -p tcp --dport 80 -j ACCEPT`
-
-但依然不能放行，这是为什么 ? ？？
-
-其实我们可以通过 /etc/sysconfig/iptables 配置规则看出端倪。在这里，第一个 DROP 已经执行了阻塞，后面再ACCEPT都没用了。
-
-所以要这么干：`iptables -I INPUT -p tcp --dport 80 -j ACCEPT`
-
-然后再一次保存规则：`iptables-save > /etc/sysconfig/iptables`
-
-这时候就可以恢复正常访问了。
-
-![](/assets/87要图dfgdfgdfgimport.png)
-
-事实上，我们也可以使用 -D （删除） / -R （替换） DROP 的选项都是可以实现的。
-
-> $ iptables -t filter -D INPUT -p tcp --dport 80 -j DROP
-
-![](/assets/asdasdxzzcvxcbvbvcbcimport.png)
 
 ---
 
