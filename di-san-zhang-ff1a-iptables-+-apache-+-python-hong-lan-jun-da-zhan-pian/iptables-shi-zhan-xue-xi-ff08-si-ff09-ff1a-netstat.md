@@ -5,12 +5,12 @@
 
 ### 常见参数：
 
-* -a或–all 显示所有连线中的Socket；
-* -t或–tcp 显示TCP传输协议的连线状况； 
-* -u或–udp 显示UDP传输协议的连线状况；
-* -l或–listening 显示监听中的服务器的Socket； 
-* -n或–numeric 直接使用IP地址，而不通过域名服务器； 
-* -p或–programs 显示正在使用Socket的程序识别码和程序名称。
+* -a 或 –all 显示所有连线中的Socket；
+* -t 或 –tcp 显示TCP传输协议的连线状况； 
+* -u 或 –udp 显示UDP传输协议的连线状况；
+* -l 或 –listening 显示监听中的服务器的Socket； 
+* -n 或 –numeric 直接使用IP地址，而不通过域名服务器； 
+* -p 或 –programs 显示正在使用Socket的程序识别码和程序名称。
 
 ### 常见的一些命令：
 
