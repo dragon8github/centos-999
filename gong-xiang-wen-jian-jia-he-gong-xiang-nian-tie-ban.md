@@ -1,3 +1,9 @@
+# 注意
+
+请确保网络链接是正常且可以互相ping通。
+
+---
+
 # 共享文件夹
 
 vmware请参考：[https://jingyan.baidu.com/article/c33e3f48a5c153ea15cbb5b2.html](https://jingyan.baidu.com/article/c33e3f48a5c153ea15cbb5b2.html)
@@ -21,8 +27,4 @@ vmware请参考：[https://jingyan.baidu.com/article/c33e3f48a5c153ea15cbb5b2.ht
 ![](/assets/asdsadasdasdasxzczxccxcxzczx.png)
 
 ![](/assets/zzcxzx84zx8485th7765gg.png)
-
-
-
-
 
