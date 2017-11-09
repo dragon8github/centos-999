@@ -30,7 +30,7 @@
 
 ![](/assets/43c7a4e3-00c4-4251-af4e-83786632e76fimport.png)
 
-查看 httpd 的服务情况
+查看 httpd 的情况
 
 > $ systemctl status httpd.service
 
@@ -48,7 +48,7 @@
 
 > $ httpd -V
 
-根据输出的 `HTTPD_ROOT`和 `SERVER_CONFIG_FILE`就可以确定httpd.conf的路径了。
+根据输出的 `HTTPD_ROOT`和 `SERVER_CONFIG_FILE`就可以确定 httpd.conf 的路径了。
 
 ![](/assets/b5565ae4-27ab-4aa2-9cf7-31edcae93adaimport.png)
 
