@@ -1,3 +1,5 @@
+# ![](/assets/吖吖zzzzc6453534534534import.png)
+
 # 最简单的禁止访问：一律红灯
 
 > $ iptables -P INPUT DROP
