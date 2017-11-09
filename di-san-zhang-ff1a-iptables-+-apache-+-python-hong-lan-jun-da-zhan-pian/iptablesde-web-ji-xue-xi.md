@@ -12,21 +12,21 @@
 
 #### centos7.x 中是使用 systemctl 命令来控制的
 
-将 httpd 加入开机启动的服务中：
+启动 httpd  服务：
 
 > $ systemctl start httpd.service
 
-或者依然可以使用 CentOS 6.5 的 chkconfig 命令。会自动转播：
+将 httpd 加入到开机启动服务：
+
+> $ systemctl enable httpd
+
+查看 httpd 服务是否开机开启：
 
 > $ chkconfig httpd
 >
 > 注意：正在将请求转发到“systemctl is-enabled httpd.service”。
 >
 > enabled
-
-查看 httpd 服务是否开启
-
-> $ systemctl is-enabled httpd.service
 
 ![](/assets/43c7a4e3-00c4-4251-af4e-83786632e76fimport.png)
 
