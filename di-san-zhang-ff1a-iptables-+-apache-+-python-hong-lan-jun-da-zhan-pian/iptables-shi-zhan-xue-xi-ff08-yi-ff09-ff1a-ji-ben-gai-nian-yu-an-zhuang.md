@@ -43,11 +43,11 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 **开启 iptables 服务：**
 
-> $ systemctl enable iptables
+> $ systemctl start iptables.service
 
 **设置开机启动服务：**
 
-> $ service iptables start
+> $ systemctl enable iptables.service
 
 ![](/assets/0ed9d991-ec0d-41eb-8a6e-f19cf4655cb7import.png)
 
@@ -69,8 +69,14 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 
 然后清空这里面的内容然后重启。开始一步步学习。由于配置文件内容被清空，实际上此时和没有 iptables 没什么区别。
 
-> $ iptabels -F
+> $ iptables -F
 >
+> $ iptables -X
+>
+> $ iptables -Z
+
+存储配置并重启
+
 > $ iptables-save /etc/sysconfig/iptables
 >
 > $ systemctl restart iptables
