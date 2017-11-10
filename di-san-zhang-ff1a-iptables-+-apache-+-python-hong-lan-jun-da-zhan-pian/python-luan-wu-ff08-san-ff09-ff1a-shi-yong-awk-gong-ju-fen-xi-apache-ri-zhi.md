@@ -43,7 +43,7 @@ ln -s 源文件名  目标文件名
 
 # Sort 命令
 
-![](/assets/6c18bf95-a41b-47d4-9667-1ee5789b1f05import.png)
+![](/assets/2be39449-d20d-4748-879b-03f8397c81c6import.png)
 
 排序，默认按ascii排序。
 
