@@ -12,7 +12,7 @@
 
 下载地址：[https://www.python.org/downloads/release/python-2711/](https://www.python.org/downloads/release/python-2711/)
 
-![](/assets/asdadasdasd2312312312312import.png)我们选择XZ压缩版本的包进行下载：
+![](/assets/asdadasdasd2312312312312import.png)我们选择 XZ 压缩版本的包进行下载：
 
 > $ wget [https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tar.xz](https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz)
 
