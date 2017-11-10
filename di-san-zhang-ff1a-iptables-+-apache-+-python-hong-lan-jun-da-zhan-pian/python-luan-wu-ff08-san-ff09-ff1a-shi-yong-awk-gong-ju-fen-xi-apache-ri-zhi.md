@@ -6,9 +6,12 @@
 
 ---
 
-# 创建链接的工具 ln
+# ln：创建文件链接
 
-课程中的日志在/etc/httpd/logs/access\_log首先，每次都要打下这么长的路径 好麻烦！
+课程中的日志在  
+/etc/httpd/logs/access\_log
+
+首先，每次都要打下这么长的路径 好麻烦！
 
 ln -s 源文件名  目标文件名
 
