@@ -41,7 +41,8 @@
 * [Iptables 实战学习（三）：filter篇](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-san-ff09-ff1a-filter-pian.md)
 * [Iptables 实战学习（四）：netstat 的使用](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-si-ff09-ff1a-netstat.md)
 * [Python 乱舞（一）：安装与使用](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-si-ff09-ff1a-python-luan-ru.md)
-* [Python 乱舞（二）：模拟访问 Apache 并人工分析](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/pythonmo-ni-fang-wen-apache-bing-fen-xi.md)
+* [Python 乱舞（二）：模拟访问并人工分析 Apache 日志](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/pythonmo-ni-fang-wen-apache-bing-fen-xi.md)
+* [Python 乱舞（三）：使用 awk 工具分析  Apache 日志](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/python-luan-wu-ff08-san-ff09-ff1a-shi-yong-awk-gong-ju-fen-xi-apache-ri-zhi.md)
 
 ## 第四章：Apache 应用和优化篇
 

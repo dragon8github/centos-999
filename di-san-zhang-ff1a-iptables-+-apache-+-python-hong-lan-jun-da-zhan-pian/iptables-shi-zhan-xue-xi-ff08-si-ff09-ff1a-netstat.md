@@ -24,6 +24,10 @@
 
 > $ netstat -ant\| grep ESTABLISHED netstat -antp
 
+显示正在通讯的连接数
+
+> $ netstat -apt \| grep "TIME\_WAIT" \| grep ":http" \| wc -l
+
 ### Tcp 状态：
 
 * LISTENING：服务启动后首先处于侦听状态；
