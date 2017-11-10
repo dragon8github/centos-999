@@ -15,11 +15,11 @@ for x in range(1, 5):
 
 调用示例，由于我们删除了第一行的解释器代码 `#!/usr/bin/python` ，所以需要手动指定解释器：
 
-> $ /usr/bin/python ./test.py
+> $ python ./test.py
 >
 > 或者
 >
-> $ python ./test.py
+> $ /usr/bin/python ./test.py
 
 # ![](/assets/37377b6c-91ac-4b5e-ad6e-0cddd7eb405bimport.png)
 
