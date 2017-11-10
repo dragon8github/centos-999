@@ -10,6 +10,8 @@
 
 # useradd：创建用户
 
+![](/assets/ 2d45bc32-d05d-4d34-bdb9-b996975dc977import.png)
+
 首先我们执行which useradd 发现这是/usr/sbin 下面的工具。 那么 /bin 和 /usr/sbin 的区别在哪呢？
 
 * /bin 包含了老大和小弟均可使用的工具 ；
@@ -28,6 +30,8 @@
 ---
 
 # passwd：设置密码
+
+![](/assets/ 505d648a-2645-4e96-9894-79ed617e0f38import.png)
 
 > $ passwd jtthink
 
