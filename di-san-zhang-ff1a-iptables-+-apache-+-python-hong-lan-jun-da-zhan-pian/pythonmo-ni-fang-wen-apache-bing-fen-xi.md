@@ -4,14 +4,20 @@
 import urllib2
 
 def gotoUrl():
-    url = 'http://192.168.128.128/index.htm'
-    response = urlib2.urlopen(url)
+    url = 'http://192.168.14.121/index.htm'
+    response = urllib2.urlopen(url)
     html = response.read()
     print html
 
 for x in range(1, 5):
     gotoUrl()
 ```
+
+# 注意
+
+请确保 http://192.168.14.121/index.htm 是你的虚拟机eth0网卡的ip。且可以访问。
+
+---
 
 # Apache 日志
 
@@ -21,5 +27,7 @@ for x in range(1, 5):
 >
 > $ cat /etc/httpd/logs/access\_log
 
+刚刚我们使用python访问了httpd。所以可以清晰的看到访问记录。
 
+![](/assets/12321612831283123123import.png)
 
