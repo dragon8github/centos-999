@@ -17,11 +17,9 @@ for x in range(1, 5):
 
 > $ httpd -V
 >
-> 找到 HTTPD\_ROOT + /logs/access\_log 就是我们的 Apache 日志了。譬如笔者的目录在 /etc/httpd/logs/access\_log 
+> 找到 HTTPD\_ROOT + /logs/access\_log 就是我们的 Apache 日志了。譬如笔者的目录在 /etc/httpd/logs/access\_log
 >
 > $ cat /etc/httpd/logs/access\_log
-
-
 
 
 
