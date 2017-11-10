@@ -62,6 +62,8 @@ ln -s 源文件名  目标文件名
 
 # Uniq 命令
 
+![](/assets/cb22efb6-0726-4b93-ab8e-cf4cd9759c99import.png)
+
 去除排序过的文件中的重复行，因此uniq经常和sort合用，所有的重复行必须是相邻的。
 
 常用参数：
