@@ -41,7 +41,7 @@
 * [Iptables 实战学习（三）：filter篇](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-san-ff09-ff1a-filter-pian.md)
 * [Iptables 实战学习（四）：netstat 的使用](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-si-ff09-ff1a-netstat.md)
 * [Python 乱舞（一）：安装与使用](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/iptables-shi-zhan-xue-xi-ff08-si-ff09-ff1a-python-luan-ru.md)
-* [Python 乱舞（二）：模拟访问 Apache 并分析](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/pythonmo-ni-fang-wen-apache-bing-fen-xi.md)
+* [Python 乱舞（二）：模拟访问 Apache 并人工分析](di-san-zhang-ff1a-iptables-+-apache-+-python-hong-lan-jun-da-zhan-pian/pythonmo-ni-fang-wen-apache-bing-fen-xi.md)
 
 ## 第四章：Apache 应用和优化篇
 
