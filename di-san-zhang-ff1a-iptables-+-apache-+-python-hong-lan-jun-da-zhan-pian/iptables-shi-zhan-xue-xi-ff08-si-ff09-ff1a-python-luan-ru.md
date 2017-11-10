@@ -65,7 +65,8 @@ xz 是一个使用 LZMA压缩算法的无损数据压缩文件格式 \(压缩率
 新建test.py
 
 ```py
-#! /usr/local/bin/python
+#!/usr/bin/python
+#coding:utf-8
 
 # 引入标准库
 import sys
@@ -80,5 +81,19 @@ get_code = sys.stdin.readline()
 print 'hello' + get_code
 ```
 
+![](/assets/3e9135b2-13b0-4dc2-9dd2-f7d42756c158import.png)
 
+---
+
+# 注意
+
+笔者曾经尝试在window中编写python代码，然后通过共享文件夹的方式传送并且打开运行。结果出现如下错误：
+
+> SyntaxError: Non-ASCII character '\xe5' in file ./test.py on line 3, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+
+这是python编码的问题， python中默认的编码格式是ASCII格式， 所以在没修改编码格式时无法正确打印汉字。
+
+> [https://www.cnblogs.com/KarryWang/p/3260858.html](https://www.cnblogs.com/KarryWang/p/3260858.html)
+
+只需要在代码顶部加入`#coding:utf-8`即可
 
