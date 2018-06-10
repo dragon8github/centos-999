@@ -61,6 +61,16 @@ Centos中他是自带的。在6.x系列中。可以用 `service iptables start` 
 >
 > enabled
 
+
+
+新增 3000  接口的允许
+
+```
+$ iptables -I INPUT -p tcp --dport 3000 -j ACCEPT
+```
+
+
+
 ---
 
 # 配置文件 与 清空配置
